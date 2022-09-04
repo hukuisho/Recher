@@ -1,0 +1,20 @@
+@import "sm/mixin";
+@import "sm/keyframes";
+@import "sh/mixin";
+@import "sh/keyframes";
+@import "guest/user/index";
+@import "guest/about/index";
+@import "application_layout/default";
+@import "application_layout/header";
+@import "application_layout/footer";
+@import "member/top/top";
+@import "member/timeline/timeline";
+@import "member/schedule/schedule";
+@import "member/search/search";
+@import "member/bell/bell";
+@import "member/renraku/renraku";
+
+h1 {
+    color: skyblue;
+    font-weight: bold;
+}

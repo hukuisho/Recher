@@ -1,0 +1,25 @@
+* {
+  width: 100%;
+  margin: 0;
+  font-family: serif;
+  font-weight: bold;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffff;
+}
+/*# sourceMappingURL=default.css.map */
