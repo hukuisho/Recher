@@ -4,11 +4,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
         <script src="{{ asset('/js/app.js') }}"></script>
-        @if ($_SERVER['REQUEST_URI'] == "/") 
+        @switch ($_SERVER['REQUEST_URI'])
+        @case("/") 
             <title>非会員TOP</title>
-        @elseif ($_SERVER['REQUEST_URI'] == "/member")
+            @break
+        @case ("/member")
             <title>会員TOP</title>
-        @endif
+            @break
+        @default
+            <title>Recher - 理想の生き方を見つけよう -</title>
+        @endswitch
     </head>
     <body>
         <div>
