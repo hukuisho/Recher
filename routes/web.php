@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GuestController;
 use App\Http\Controllers\MemberController;
+use App\Http\Controllers\CommonsController;
 
 
 /*
@@ -15,9 +17,11 @@ use App\Http\Controllers\MemberController;
 |
 */
 
-Route::get('/', function () {
-    return view('app');
-});Route::get('/member', [MemberController::class, 'top']);
+//非会員
+Route::get('/', [GuestController::class, 'top']);
+//会員
+Route::get('/member', [MemberController::class, 'top']);
+
 
 // ////////////////////////
 // //ログイン機能後に'/'は  //
