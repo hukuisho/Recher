@@ -4,8 +4,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
         <script src="{{ asset('/js/app.js') }}"></script>
+        <script src="{{ asset('/js/commons/header.js') }}"></script>
+        <script src="{{ asset('/js/commons/footer.js') }}"></script>
         @switch ($_SERVER['REQUEST_URI'])
-        @case("/") 
+        @case("/")
+            <script src="{{ asset('/js/guest/index.js') }}"></script>
             <title>非会員TOP</title>
             @break
         @case ("/member")

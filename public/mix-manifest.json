@@ -1,4 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
+    "/js/commons/header.js": "/js/commons/header.js",
+    "/js/commons/footer.js": "/js/commons/footer.js",
+    "/js/guest/index.js": "/js/guest/index.js",
     "/css/app.css": "/css/app.css"
 }
