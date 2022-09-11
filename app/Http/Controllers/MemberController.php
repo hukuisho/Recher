@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 class MemberController extends Controller
 {
     public function top() {
-        return view('member/top/top');
+        $a = "aaa";
+        $viewUseArray = array(
+            "a" => $a,
+        );
+        return view('member/top/top')->with('viewUseArray',$viewUseArray);
     }
 }
