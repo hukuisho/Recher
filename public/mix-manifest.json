@@ -3,5 +3,6 @@
     "/js/commons/header.js": "/js/commons/header.js",
     "/js/commons/footer.js": "/js/commons/footer.js",
     "/js/guest/index.js": "/js/guest/index.js",
+    "/js/member/timeline/timeline.js": "/js/member/timeline/timeline.js",
     "/css/app.css": "/css/app.css"
 }
