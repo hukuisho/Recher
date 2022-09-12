@@ -14,7 +14,8 @@
 @import "member/bell/bell";
 @import "member/renraku/renraku";
 
-h1 {
-    color: skyblue;
-    font-weight: bold;
+.richer {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll; // スクロールでhederとfooterの下をすり抜け
 }
