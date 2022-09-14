@@ -5,7 +5,7 @@
         @return $size / 10;
     } @else if($pattern == "pattern3") {
         @return $size * 5;
-    } @else if($pattern == "pattern3") {
+    } @else if($pattern == "pattern4") {
         @return $size * 10;
     }
 }
