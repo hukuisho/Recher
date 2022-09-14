@@ -8,8 +8,8 @@
     outline: 3px solid goldenrod;
     outline-offset: -3px;
     z-index: 1;
+    background-image: gradientColor(45deg, #72e4cb, #d841d88d);
     @include boxShadowColor(12px);
-    @include gradientColor(45deg, #72e4cb, #d841d88d);
     &__navList {
         display: flex;
         align-items: center;

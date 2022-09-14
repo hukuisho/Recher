@@ -1,0 +1,6 @@
+@function widthRegulation($size) {
+    @return $size / 5;
+}
+@function gradientColor($direction, $colorFirst, $colorSecond) {
+    @return linear-gradient($direction, $colorFirst, $colorSecond);
+}

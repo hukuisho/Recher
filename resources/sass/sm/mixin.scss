@@ -1,8 +1,5 @@
-@mixin gradientColor($direction, $colorFirst, $colorSecond) {
-    background-image: linear-gradient($direction, $colorFirst, $colorSecond);
-}
 @mixin footerNavList($judgement) {
-    width: 20%;
+    width: widthRegulation(100%);
     padding: 25px 0%;
     font-weight: bold;
     transition: all 0ms ease;
@@ -10,7 +7,7 @@
         border-left: 3px goldenrod solid;
     }
     &:active {
-        background-color: #ffff;
+        background-color: rgb(255, 255, 255);
     }
 }
 @mixin textShadowColor($textShadowColor) {
