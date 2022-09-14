@@ -1,5 +1,5 @@
 @mixin footerNavList($judgement) {
-    width: widthRegulation(100%);
+    width: widthRegulation(100%, "pattern1");
     padding: 25px 0%;
     font-weight: bold;
     transition: all 0ms ease;
@@ -16,7 +16,4 @@
         $textShadowColor 1px 1px 1px, $textShadowColor -1px 1px 1px,
         $textShadowColor 1px -1px 1px, $textShadowColor -1px -1px 1px,
         $textShadowColor 1px 1px 1px, $textShadowColor -1px 1px 1px;
-}
-@mixin boxShadowColor($boxShadowColor) {
-    box-shadow: 0px 0px $boxShadowColor;
 }

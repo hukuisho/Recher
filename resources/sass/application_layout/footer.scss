@@ -9,7 +9,7 @@
     outline: 3px solid goldenrod;
     outline-offset: -3px;
     cursor: pointer;
-    @include boxShadowColor(9px);
+    box-shadow: boxShadowColor(9px, "pattern3");
     &__navList {
         display: flex;
         align-items: center;

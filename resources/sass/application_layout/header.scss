@@ -9,7 +9,6 @@
     outline-offset: -3px;
     z-index: 1;
     background-image: gradientColor(45deg, #72e4cb, #d841d88d);
-    @include boxShadowColor(12px);
     &__navList {
         display: flex;
         align-items: center;

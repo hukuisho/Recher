@@ -1,6 +1,23 @@
-@function widthRegulation($size) {
-    @return $size / 5;
+@function widthRegulation($size, $pattern) {
+    @if ($pattern == "pattern1") {
+        @return $size / 5;
+    } @else if($pattern == "pattern2") {
+        @return $size / 10;
+    } @else if($pattern == "pattern3") {
+        @return $size * 5;
+    } @else if($pattern == "pattern3") {
+        @return $size * 10;
+    }
 }
 @function gradientColor($direction, $colorFirst, $colorSecond) {
     @return linear-gradient($direction, $colorFirst, $colorSecond);
+}
+@function boxShadowColor($boxShadowColor, $pattern) {
+    @if ($pattern == "pattern1") {
+        @return $boxShadowColor 0px 0px;
+    } @else if($pattern == "pattern2") {
+        @return 0px $boxShadowColor 0px;
+    } @else if($pattern == "pattern3") {
+        @return 0px 0px $boxShadowColor;
+    }
 }
