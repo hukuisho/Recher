@@ -7,4 +7,5 @@ mix.ts(
     "resources/ts/member/timeline/timeline.ts",
     "public/js/member/timeline/"
 );
+mix.ts("resources/ts/member/top/top.ts", "public/js/member/top/");
 mix.sass("resources/sass/app.scss", "public/css");

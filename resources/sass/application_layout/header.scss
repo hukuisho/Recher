@@ -1,0 +1,58 @@
+.richer__header {
+    width: 100%;
+    height: 12%;
+    display: grid;
+    position: fixed;
+    top: 0;
+    justify-items: unset;
+    outline: 3px solid goldenrod;
+    outline-offset: -3px;
+    z-index: 1;
+    @include boxShadowColor(12px);
+    @include gradientColor(45deg, #72e4cb, #d841d88d);
+    &__navList {
+        display: flex;
+        align-items: center;
+        &__title {
+            padding: 15px;
+            width: 75%;
+            font-size: 200%;
+            animation-name: logoAnime;
+            animation-duration: 3000ms;
+            animation-fill-mode: forwards;
+            transition: all 0ms ease;
+        }
+        &__user {
+            width: 25%;
+            height: 100%;
+            border-left: 3px goldenrod solid;
+            &__icon {
+                position: absolute;
+                transform: scale(2.8);
+                top: 74.15%;
+                right: 10%;
+                bottom: 0%;
+                color: aliceblue;
+                width: 14px;
+                height: 6px;
+                border-left: solid 1px;
+                border-right: solid 1px;
+                border-top: solid 1px;
+                border-bottom: solid 1px transparent;
+                background-color: currentColor;
+                border-radius: 6px 6px 0 0;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 15%;
+                    bottom: 115%;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    border: solid 1px;
+                    background-color: currentColor;
+                }
+            }
+        }
+    }
+}

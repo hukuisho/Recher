@@ -1,4 +1,4 @@
 @extends('layouts.layouts')
 @section('content')
-    <h1>会員TOP</h1>
+<h5 id="greetingText" class="greetingText"></h5>
 @endsection

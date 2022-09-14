@@ -4,5 +4,6 @@
     "/js/commons/footer.js": "/js/commons/footer.js",
     "/js/guest/index.js": "/js/guest/index.js",
     "/js/member/timeline/timeline.js": "/js/member/timeline/timeline.js",
+    "/js/member/top/top.js": "/js/member/top/top.js",
     "/css/app.css": "/css/app.css"
 }
