@@ -11,3 +11,4 @@ Route::get('/layout', [LayoutController::class, 'index'])->name('layouts.index')
 Route::get('/', [GuestController::class, 'top']);
 //会員
 Route::get('/member', [MemberController::class, 'top']);
+Route::get('/member/search', [MemberController::class, 'search']);

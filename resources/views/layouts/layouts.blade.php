@@ -17,6 +17,10 @@
             <script src="{{ asset('/js/member/top/top.js') }}"></script>
             <title>会員TOP</title>
             @break
+        @case ("/member/search")
+            <script src="{{ asset('/js/member/search/search.js') }}"></script>
+            <title>検索</title>
+            @break
         @default
             <title>Recher - 理想の生き方を見つけよう -</title>
         @endswitch
@@ -46,7 +50,7 @@
                             <a href="">予定</a>
                         </li>
                         <li class="richer__footer__navList__search">
-                            <a href="">検索</a>
+                            <a href="/member/search">検索</a>
                         </li>
                         <li class="richer__footer__navList__bell">
                             <a href="">通知</a>

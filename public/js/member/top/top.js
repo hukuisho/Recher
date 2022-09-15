@@ -7,7 +7,7 @@ var __webpack_exports__ = {};
 
 
 addEventListener("DOMContentLoaded", function () {
-  var getGreetingText = document.querySelector("#greetingText");
+  var getGreetingText = document.querySelector("#getGreetingText");
   var GREETING_TYPE = ["おはようございます", "こんにちは", "こんばんは"];
   var MORNING = GREETING_TYPE[0],
       AFTERNOON = GREETING_TYPE[1],

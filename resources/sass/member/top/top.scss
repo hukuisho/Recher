@@ -1,8 +1,10 @@
 .greetingText {
-    width: 8ch;
+    width: 9ch;
     animation: typing 2s steps(22), step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     font-family: monospace;
     font-size: 2em;
+    color: bisque;
+    @include textShadowColor(saddlebrown);
 }

@@ -1,5 +1,5 @@
 addEventListener("DOMContentLoaded", () => {
-    const getGreetingText = document.querySelector("#greetingText");
+    const getGreetingText = document.querySelector("#getGreetingText");
 
     const GREETING_TYPE: readonly string[] = [
         "おはようございます",

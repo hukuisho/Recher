@@ -13,4 +13,13 @@ class MemberController extends Controller
         );
         return view('member/top/top')->with('viewUseArray',$viewUseArray);
     }
+    public function search() {
+        $text = "ググる!!!";
+        $searchWord = "検索ワードを入力してください。";
+        $viewUseArray = array(
+            "text" => $text,
+        );
+        return view('member/search/index')->with('viewUseArray',$viewUseArray);
+    }
+
 }

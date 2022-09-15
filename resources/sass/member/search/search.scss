@@ -1,0 +1,25 @@
+.search {
+    margin: 10% auto;
+    &__text {
+        margin-bottom: 4%;
+        color: #00000087;
+        font-weight: bold;
+    }
+    &__word {
+        width: 80%;
+        text-align: center;
+        padding: 5%;
+        outline: none;
+        width: 80%;
+        padding: 5%;
+        outline: none;
+        border: solid;
+        &__input {
+            width: 30%;
+            margin: 10% auto 16%;
+            padding: 1%;
+            transition: 1000ms all ease-in-out;
+            box-shadow: boxShadowColor(5px, "pattern3");
+        }
+    }
+}
