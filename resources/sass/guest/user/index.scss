@@ -1,3 +1,4 @@
+//ゲストのTOP
 .auth-select {
     width: 80%;
     text-align: center;
@@ -24,6 +25,7 @@
         }
     }
 }
+//新規登録ページとログインページ
 $authTitleLists: register, login;
 @each $auth in $authTitleLists {
     .#{$auth} {
@@ -67,5 +69,13 @@ $authTitleLists: register, login;
         &__position {
             padding-left: 1.5%;
         }
+    }
+}
+//プロフィール
+.my_page {
+    width: 100%;
+    &__logout {
+        width: 85px;
+        margin: 0 auto;
     }
 }
