@@ -12,4 +12,10 @@ class GuestController extends Controller
         );
         return view('guest/top/top')->with('viewUseArray',$viewUseArray);
     }
+    public function register() {
+        $viewUseArray = array(
+            "a" => "a",
+        );
+        return view('guest/user/register')->with('viewUseArray',$viewUseArray);
+    }
 }

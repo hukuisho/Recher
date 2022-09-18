@@ -10,5 +10,7 @@ Route::get('/layout', [LayoutController::class, 'index'])->name('layouts.index')
 //非会員
 Route::get('/', [GuestController::class, 'top']);
 //会員
-Route::get('/member', [MemberController::class, 'top']);
-Route::get('/member/search', [MemberController::class, 'search']);
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/member', [MemberController::class, 'top']);
+    Route::get('/member/search', [MemberController::class, 'search']);
+});

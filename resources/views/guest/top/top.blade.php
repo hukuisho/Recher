@@ -1,4 +1,8 @@
 @extends('layouts.layouts')
 @section('content')
-    <h1>非会員TOP</h1>
+    <div>
+        <a href="/login">ログイン</a>
+        <span>|</span>
+        <a href="/register">新規登録</a>
+    </div>
 @endsection

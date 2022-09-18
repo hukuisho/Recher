@@ -27,11 +27,19 @@
     </head>
     <body>
         <div class="richer">
-            @unless ($_SERVER['REQUEST_URI'] == "/")
+            @unless ($_SERVER['REQUEST_URI'] == "/" || "/register" || "login")
                 <div class="richer__header">
                 <div class="richer__header__navList">
                     <a href="/member" class="richer__header__navList__title">Richer</a>
                     <a href="" class="richer__header__navList__user">
+                        <span class="richer__header__navList__user__icon"></span>
+                    </a>
+                </div>
+            @else
+            <div class="richer__header">
+                <div class="richer__header__navList">
+                    <a href="/" class="richer__header__navList__title">Richer</a>
+                    <a href="/login" class="richer__header__navList__user">
                         <span class="richer__header__navList__user__icon"></span>
                     </a>
                 </div>
@@ -40,7 +48,7 @@
                 @yield('content')
             </div>
             <!-- footer s -->
-            @unless ($_SERVER['REQUEST_URI'] == "/")
+            @unless ($_SERVER['REQUEST_URI'] == "/" || "/register" || "login")
                 <div class="richer__footer">
                     <div class="richer__footer__navList">
                         <a href="" class="richer__footer__navList__timeline">
