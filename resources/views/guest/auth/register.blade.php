@@ -13,7 +13,9 @@
             <dd><input type="password" name="password"></dd>
             <dt>パスワード（確認用）</dt>
             <dd><input class="form-list__password_confirmation" type="password" name="password_confirmation" placeholder="もう一度入力"></dd>
-            <input class="form-list__button" type="submit"></input>
+            <div class="form-list__button__position">
+                <input class="form-list__button" type="submit"></input>
+            </div>
         </dl>
     </form>
 @endsection

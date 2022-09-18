@@ -100,18 +100,33 @@
     opacity: 1;
   }
 }
-.guest-top {
-  background: teal;
-  width: 50%;
+.auth-select {
+  width: 80%;
+  text-align: center;
   margin: 10% auto;
-  padding: 20%;
 }
-.guest-top a {
+
+.guest-top {
+  justify-content: center;
+  background: teal;
+  display: flex;
+  width: 100%;
+  border: white 2px solid;
+}
+.guest-top__login {
+  width: 50%;
   color: white;
   font-weight: bold;
+  text-align: center;
+  padding: 10%;
+  border-right: white 2px solid;
 }
-.guest-top span {
-  color: gold;
+.guest-top__register {
+  width: 50%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 10%;
 }
 
 .register {
@@ -161,9 +176,12 @@
   margin: 3%;
 }
 .form-list__button {
-  background-color: rgb(42, 59, 169);
+  background-color: rgb(169, 42, 125);
   color: white;
   width: 50%;
+}
+.form-list__button__position {
+  padding-left: 1.5%;
 }
 
 * {
@@ -374,6 +392,6 @@ a {
   background-size: cover;
 }
 .richer__container__space {
-  padding: 40px;
+  padding: 45px;
   width: 1%;
 }
