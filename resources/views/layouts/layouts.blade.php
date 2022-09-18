@@ -27,15 +27,17 @@
     </head>
     <body>
         <div class="richer">
-            @unless ($_SERVER['REQUEST_URI'] == "/" || "/register" || "login")
+            @auth
                 <div class="richer__header">
-                <div class="richer__header__navList">
-                    <a href="/member" class="richer__header__navList__title">Richer</a>
-                    <a href="" class="richer__header__navList__user">
-                        <span class="richer__header__navList__user__icon"></span>
-                    </a>
+                    <div class="richer__header__navList">
+                        <a href="/member" class="richer__header__navList__title">Richer</a>
+                        <a href="" class="richer__header__navList__user">
+                            <span class="richer__header__navList__user__icon"></span>
+                        </a>
+                    </div>
                 </div>
-            @else
+            @endauth
+            @guest
             <div class="richer__header">
                 <div class="richer__header__navList">
                     <a href="/" class="richer__header__navList__title">Richer</a>
@@ -43,12 +45,15 @@
                         <span class="richer__header__navList__user__icon"></span>
                     </a>
                 </div>
-            @endunless
+            </div>
+            @endguest
             <div class="richer__container">
+                <div class="richer__container__space"></div>
                 @yield('content')
+                <div class="richer__container__space"></div>
             </div>
             <!-- footer s -->
-            @unless ($_SERVER['REQUEST_URI'] == "/" || "/register" || "login")
+            @auth
                 <div class="richer__footer">
                     <div class="richer__footer__navList">
                         <a href="" class="richer__footer__navList__timeline">
@@ -68,7 +73,10 @@
                         </a>
                     </div>
                 </div>
-            @endunless
+            @endauth
+            @guest
+            <div class="richer__footer"><div>
+            @endguest
         </div>
     </body>
 </html>

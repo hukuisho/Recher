@@ -1,0 +1,55 @@
+.guest-top {
+    background: teal;
+    width: 50%;
+    margin: 10% auto;
+    padding: 20%;
+    & a {
+        color: #ffff;
+        font-weight: bold;
+    }
+    & span {
+        color: gold;
+    }
+}
+$authTitleLists: register, login;
+@each $auth in $authTitleLists {
+    .#{$auth} {
+        width: 40%;
+        margin: 3% auto;
+        color: brown;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.25);
+        @include textShadowColor(goldenrod);
+    }
+}
+.auth-link {
+    color: blueviolet;
+    text-decoration: underline;
+    transition: all 1000ms ease-in-out;
+    animation: flash 2s linear infinite;
+}
+.form-list {
+    width: 90%;
+    margin: 4% auto;
+    text-align: center;
+    background-color: teal;
+    border: 2px goldenrod solid;
+    padding: 3%;
+    &__password_confirmation {
+        text-align: center;
+    }
+    & dd {
+        width: 60%;
+        padding: 2%;
+        margin: 0 auto;
+    }
+    & input {
+        padding: 2.5%;
+        margin: 3%;
+    }
+    &__button {
+        background-color: rgb(42 59 169);
+        color: #ffff;
+        width: 50%;
+    }
+}

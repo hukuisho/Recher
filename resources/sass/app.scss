@@ -19,14 +19,13 @@
 .richer {
     width: 100%;
     height: 100%;
-    overflow-y: scroll; // スクロールでhederとfooterの下をすり抜け
     &__container {
         min-height: 100vh;
         background-image: url(img/apl_main_bg.jpg);
         background-size: cover;
-        // &__space {
-        //     padding: 45px;
-        //     width: 1%;
-        // }
+        &__space {
+            padding: 40px;
+            width: 1%;
+        }
     }
 }
