@@ -1,6 +1,14 @@
 @extends('layouts.layouts')
 @section('content')
     <h2 class="register">会員登録</h2>
+    @if ($errors->any())
+    <div class="login_error">
+    <ul>
+    @foreach ($errors->all() as $error)
+        <li>{{ $error }}</li>
+    @endforeach
+    </ul>
+    @endif
     <a class="auth-link" href="/login">>>会員アカウントをお持ちの方はこちら<<</a>
     <form action="{{ route('register') }}" method="post">
         @csrf 
