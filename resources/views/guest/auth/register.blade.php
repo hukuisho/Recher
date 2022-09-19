@@ -13,13 +13,13 @@
     <form action="{{ route('register') }}" method="post">
         @csrf 
         <dl class="form-list">
-            <dt>名前</dt>
-            <dd><input type="text" name="name" value="{{ old('name') }}"></dd>
-            <dt>メールアドレス</dt>
+            <dt class="form-list__menu">名前</dt>
+            <dd><input type="text" name="name" placeholder="山田太郎" value="{{ old('name') }}"></dd>
+            <dt class="form-list__menu">メールアドレス</dt>
             <dd><input type="email" name="email" value="{{ old('email') }}"></dd>
-            <dt>パスワード</dt>
+            <dt class="form-list__menu">パスワード</dt>
             <dd><input type="password" name="password"></dd>
-            <dt>パスワード（確認用）</dt>
+            <dt class="form-list__menu">パスワード（確認用）</dt>
             <dd><input class="form-list__password_confirmation" type="password" name="password_confirmation" placeholder="もう一度入力"></dd>
             <div class="form-list__button__position">
                 <input class="form-list__button" type="submit"></input>

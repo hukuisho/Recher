@@ -29,12 +29,7 @@
 $authTitleLists: register, login;
 @each $auth in $authTitleLists {
     .#{$auth} {
-        width: 40%;
-        margin: 3% auto;
-        color: brown;
-        cursor: pointer;
-        background-color: rgba(255, 255, 255, 0.25);
-        @include textShadowColor(goldenrod);
+        @include userPageTitle;
     }
 }
 .auth-link {
@@ -50,6 +45,10 @@ $authTitleLists: register, login;
     background-color: teal;
     border: 2px goldenrod solid;
     padding: 3%;
+    &__menu {
+        color: palegoldenrod;
+        @include textShadowColor(rgb(181, 87, 87));
+    }
     &__password_confirmation {
         text-align: center;
     }
@@ -61,6 +60,8 @@ $authTitleLists: register, login;
     & input {
         padding: 2.5%;
         margin: 3%;
+        outline: none;
+        text-align: center;
     }
     &__button {
         background-color: rgb(169 42 125);

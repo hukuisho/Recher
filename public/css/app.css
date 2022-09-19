@@ -163,6 +163,10 @@
   border: 2px goldenrod solid;
   padding: 3%;
 }
+.form-list__menu {
+  color: palegoldenrod;
+  text-shadow: rgb(181, 87, 87) 1px 0px 1px, rgb(181, 87, 87) -1px 0px 1px, rgb(181, 87, 87) 0px -1px 1px, rgb(181, 87, 87) -1px 0px 1px, rgb(181, 87, 87) 1px 1px 1px, rgb(181, 87, 87) -1px 1px 1px, rgb(181, 87, 87) 1px -1px 1px, rgb(181, 87, 87) -1px -1px 1px, rgb(181, 87, 87) 1px 1px 1px, rgb(181, 87, 87) -1px 1px 1px;
+}
 .form-list__password_confirmation {
   text-align: center;
 }
@@ -174,6 +178,8 @@
 .form-list input {
   padding: 2.5%;
   margin: 3%;
+  outline: none;
+  text-align: center;
 }
 .form-list__button {
   background-color: rgb(169, 42, 125);
@@ -219,6 +225,12 @@ ul {
 a {
   text-decoration: none;
   color: #000;
+}
+
+input[type=submit],
+button {
+  -webkit-appearance: none;
+  background-color: rgb(141, 97, 221);
 }
 
 .richer__header {
@@ -362,6 +374,67 @@ a {
   font-size: 2em;
   color: bisque;
   text-shadow: saddlebrown 1px 0px 1px, saddlebrown -1px 0px 1px, saddlebrown 0px -1px 1px, saddlebrown -1px 0px 1px, saddlebrown 1px 1px 1px, saddlebrown -1px 1px 1px, saddlebrown 1px -1px 1px, saddlebrown -1px -1px 1px, saddlebrown 1px 1px 1px, saddlebrown -1px 1px 1px;
+}
+
+.my_page__userName {
+  margin: 2% auto;
+}
+.my_page__relationship-link {
+  color: rgba(9, 77, 134, 0.517);
+  text-decoration: underline;
+}
+.my_page__edit-link {
+  color: rgba(9, 77, 134, 0.517);
+  text-decoration: underline;
+}
+.my_page__show-link {
+  color: rgba(9, 77, 134, 0.517);
+  text-decoration: underline;
+}
+.my_page__logout {
+  margin: 5% auto;
+}
+.my_page__logout button {
+  background-color: white;
+}
+
+.user-edit {
+  width: 100%;
+}
+.user-edit__title {
+  width: 40%;
+  margin: 3% auto;
+  color: brown;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.25);
+  text-shadow: goldenrod 1px 0px 1px, goldenrod -1px 0px 1px, goldenrod 0px -1px 1px, goldenrod -1px 0px 1px, goldenrod 1px 1px 1px, goldenrod -1px 1px 1px, goldenrod 1px -1px 1px, goldenrod -1px -1px 1px, goldenrod 1px 1px 1px, goldenrod -1px 1px 1px;
+}
+.user-edit__form-list {
+  width: 90%;
+  margin: 4% auto;
+  text-align: center;
+  background-color: teal;
+  border: 2px goldenrod solid;
+  padding: 3%;
+}
+.user-edit__menu {
+  color: palegoldenrod;
+  text-shadow: rgb(181, 87, 87) 1px 0px 1px, rgb(181, 87, 87) -1px 0px 1px, rgb(181, 87, 87) 0px -1px 1px, rgb(181, 87, 87) -1px 0px 1px, rgb(181, 87, 87) 1px 1px 1px, rgb(181, 87, 87) -1px 1px 1px, rgb(181, 87, 87) 1px -1px 1px, rgb(181, 87, 87) -1px -1px 1px, rgb(181, 87, 87) 1px 1px 1px, rgb(181, 87, 87) -1px 1px 1px;
+}
+.user-edit__input {
+  width: 60%;
+  padding: 2%;
+  margin: 3%;
+  text-align: center;
+  outline: none;
+}
+.user-edit__button {
+  background-color: rgba(108, 42, 169, 0.837);
+  color: white;
+  width: 150px;
+  margin: 3% 0%;
+  padding: 3%;
+  cursor: pointer;
 }
 
 .search {

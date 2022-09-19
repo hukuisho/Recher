@@ -14,9 +14,9 @@
     <form action="{{ route('login') }}" method="post">
     @csrf 
     <dl class="form-list">
-        <dt>メールアドレス</dt>
+        <dt class="form-list__menu">メールアドレス</dt>
         <dd><input type="email" name="email" value="{{ old('email') }}"></dd>
-        <dt>パスワード</dt>
+        <dt class="form-list__menu">パスワード</dt>
         <dd><input type="password" name="password"></dd>
         <div class="form-list__button__position">
             <input class="form-list__button" type="submit"></input>

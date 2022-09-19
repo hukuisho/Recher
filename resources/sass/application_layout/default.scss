@@ -22,3 +22,8 @@ a {
     text-decoration: none;
     color: #000;
 }
+input[type="submit"],
+button {
+    -webkit-appearance: none;
+    background-color: rgb(141 97 221);
+}

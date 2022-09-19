@@ -1,0 +1,51 @@
+.my_page {
+    &__userName {
+        margin: 2% auto;
+    }
+    $userMyLinkLists: relationship-link, edit-link, show-link;
+    @each $user in $userMyLinkLists {
+        &__#{$user} {
+            color: rgba(9, 77, 134, 0.517);
+            text-decoration: underline;
+        }
+    }
+    &__logout {
+        margin: 5% auto;
+        & button {
+            background-color: #ffff;
+        }
+    }
+}
+.user-edit {
+    width: 100%;
+    &__title {
+        @include userPageTitle;
+    }
+    &__form-list {
+        width: 90%;
+        margin: 4% auto;
+        text-align: center;
+        background-color: teal;
+        border: 2px goldenrod solid;
+        padding: 3%;
+    }
+    &__menu {
+        color: palegoldenrod;
+        @include textShadowColor(rgb(181, 87, 87));
+    }
+    &__input {
+        width: 60%;
+        padding: 2%;
+        margin: 3%;
+        text-align: center;
+        outline: none;
+    }
+    &__button {
+        background-color: rgba(108, 42, 169, 0.837);
+        color: #ffff;
+        width: 150px;
+        margin: 3% 0%;
+        padding: 3%;
+        cursor: pointer;
+    }
+}

@@ -15,6 +15,7 @@
             type="submit"
             name="btng"
             id="isSearchInput"
+            style="background-color: goldenrod;"
             class="search__Word__input"
             value="検索"
         />
