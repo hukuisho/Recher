@@ -22,7 +22,11 @@
             <title>検索</title>
             @break
         @default
-            <title>Recher - 理想の生き方を見つけよう -</title>
+            @if(strpos($_SERVER['REQUEST_URI'],'user') == true)
+                <title>マイページ</title>
+            @else 
+                <title>Recher - 理想の生き方を見つけよう -</title>
+            @endif
         @endswitch
     </head>
     <body>
