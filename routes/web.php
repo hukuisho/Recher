@@ -5,8 +5,6 @@ use App\Http\Controllers\GuestController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\CommonsController;
 use App\Http\Controllers\LayoutControlle;
-//共通
-Route::get('/layout', [LayoutController::class, 'index'])->name('layouts.index');
 //非会員
 Route::get('/', [GuestController::class, 'top']);
 //会員
