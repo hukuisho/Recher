@@ -10,6 +10,6 @@ class LayoutController extends Controller
 
       $viewUseArray = array(
       );
-    return view('layouts/layouts')->with('viewUseArray',$viewUseArray);
+    return view('layouts.layouts')->with('viewUseArray',$viewUseArray);
     }
 }

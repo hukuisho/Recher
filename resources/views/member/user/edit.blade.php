@@ -1,7 +1,7 @@
 @extends('layouts.layouts')
 @section('content')
 <div class="user-edit">
-    <h3 class="user-edit__title">編集</h3>
+    <h2 class="user-edit__title">編集</h2>
     <form
     class="user-edit__form-list"
     action=""

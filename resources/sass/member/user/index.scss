@@ -1,4 +1,6 @@
 .my_page {
+    width: 100%;
+
     &__userName {
         margin: 2% auto;
     }
@@ -10,13 +12,16 @@
         }
     }
     &__logout {
+        width: 85px;
         margin: 5% auto;
         & button {
+            padding: 6%;
             background-color: #ffff;
         }
     }
 }
-.user-edit {
+.user-edit,
+.user-show {
     width: 100%;
     &__title {
         @include userPageTitle;
@@ -31,12 +36,21 @@
     }
     &__menu {
         color: palegoldenrod;
+        font-size: 175%;
         @include textShadowColor(rgb(181, 87, 87));
+        $showProfile: name, email;
+        @each $profile in $showProfile {
+            &__#{$profile} {
+                margin: 3% 0%;
+                font-size: 130%;
+            }
+        }
     }
     &__input {
         width: 60%;
         padding: 2%;
         margin: 3%;
+        font-size: 130%;
         text-align: center;
         outline: none;
     }

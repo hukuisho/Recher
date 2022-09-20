@@ -31,56 +31,13 @@
     </head>
     <body>
         <div class="richer">
-            @auth
-                <div class="richer__header">
-                    <div class="richer__header__navList">
-                        <a href="/member" class="richer__header__navList__title">Richer</a>
-                        <a href="/member/user" class="richer__header__navList__user">
-                            <span class="richer__header__navList__user__icon"></span>
-                        </a>
-                    </div>
-                </div>
-            @endauth
-            @guest
-            <div class="richer__header">
-                <div class="richer__header__navList">
-                    <a href="/" class="richer__header__navList__title">Richer</a>
-                    <a href="/login" class="richer__header__navList__user">
-                        <span class="richer__header__navList__user__icon"></span>
-                    </a>
-                </div>
-            </div>
-            @endguest
+            @include('layouts.header')
             <div class="richer__container">
                 <div class="richer__container__space"></div>
                 @yield('content')
                 <div class="richer__container__space"></div>
             </div>
-            <!-- footer s -->
-            @auth
-                <div class="richer__footer">
-                    <div class="richer__footer__navList">
-                        <a href="" class="richer__footer__navList__timeline">
-                            投稿
-                        </a>
-                        <a href="" class="richer__footer__navList__schedule">
-                            予定
-                        </a>
-                        <a href="/member/search" class="richer__footer__navList__search">
-                            検索
-                        </a>
-                        <a href="" class="richer__footer__navList__bell">
-                            通知
-                        </a>
-                        <a href="" class="richer__footer__navList__renraku">
-                            連絡
-                        </a>
-                    </div>
-                </div>
-            @endauth
-            @guest
-            <div class="richer__footer"><div>
-            @endguest
+            @include('layouts.footer')
         </div>
     </body>
 </html>

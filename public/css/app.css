@@ -180,6 +180,7 @@
   margin: 3%;
   outline: none;
   text-align: center;
+  font-size: 120%;
 }
 .form-list__button {
   background-color: rgb(169, 42, 125);
@@ -188,14 +189,6 @@
 }
 .form-list__button__position {
   padding-left: 1.5%;
-}
-
-.my_page {
-  width: 100%;
-}
-.my_page__logout {
-  width: 85px;
-  margin: 0 auto;
 }
 
 * {
@@ -376,6 +369,9 @@ button {
   text-shadow: saddlebrown 1px 0px 1px, saddlebrown -1px 0px 1px, saddlebrown 0px -1px 1px, saddlebrown -1px 0px 1px, saddlebrown 1px 1px 1px, saddlebrown -1px 1px 1px, saddlebrown 1px -1px 1px, saddlebrown -1px -1px 1px, saddlebrown 1px 1px 1px, saddlebrown -1px 1px 1px;
 }
 
+.my_page {
+  width: 100%;
+}
 .my_page__userName {
   margin: 2% auto;
 }
@@ -392,16 +388,20 @@ button {
   text-decoration: underline;
 }
 .my_page__logout {
+  width: 85px;
   margin: 5% auto;
 }
 .my_page__logout button {
+  padding: 6%;
   background-color: white;
 }
 
-.user-edit {
+.user-edit,
+.user-show {
   width: 100%;
 }
-.user-edit__title {
+.user-edit__title,
+.user-show__title {
   width: 40%;
   margin: 3% auto;
   color: brown;
@@ -409,7 +409,8 @@ button {
   background-color: rgba(255, 255, 255, 0.25);
   text-shadow: goldenrod 1px 0px 1px, goldenrod -1px 0px 1px, goldenrod 0px -1px 1px, goldenrod -1px 0px 1px, goldenrod 1px 1px 1px, goldenrod -1px 1px 1px, goldenrod 1px -1px 1px, goldenrod -1px -1px 1px, goldenrod 1px 1px 1px, goldenrod -1px 1px 1px;
 }
-.user-edit__form-list {
+.user-edit__form-list,
+.user-show__form-list {
   width: 90%;
   margin: 4% auto;
   text-align: center;
@@ -417,18 +418,33 @@ button {
   border: 2px goldenrod solid;
   padding: 3%;
 }
-.user-edit__menu {
+.user-edit__menu,
+.user-show__menu {
   color: palegoldenrod;
+  font-size: 175%;
   text-shadow: rgb(181, 87, 87) 1px 0px 1px, rgb(181, 87, 87) -1px 0px 1px, rgb(181, 87, 87) 0px -1px 1px, rgb(181, 87, 87) -1px 0px 1px, rgb(181, 87, 87) 1px 1px 1px, rgb(181, 87, 87) -1px 1px 1px, rgb(181, 87, 87) 1px -1px 1px, rgb(181, 87, 87) -1px -1px 1px, rgb(181, 87, 87) 1px 1px 1px, rgb(181, 87, 87) -1px 1px 1px;
 }
-.user-edit__input {
+.user-edit__menu__name,
+.user-show__menu__name {
+  margin: 3% 0%;
+  font-size: 130%;
+}
+.user-edit__menu__email,
+.user-show__menu__email {
+  margin: 3% 0%;
+  font-size: 130%;
+}
+.user-edit__input,
+.user-show__input {
   width: 60%;
   padding: 2%;
   margin: 3%;
+  font-size: 130%;
   text-align: center;
   outline: none;
 }
-.user-edit__button {
+.user-edit__button,
+.user-show__button {
   background-color: rgba(108, 42, 169, 0.837);
   color: white;
   width: 150px;
