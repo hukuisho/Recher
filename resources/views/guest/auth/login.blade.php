@@ -2,14 +2,14 @@
 @section('content')
     <h2 class="login">ログイン</h2>
     @if ($errors->any())
-    <div class="login_error">
-    <ul>
-    @foreach ($errors->all() as $error)
-        <li>{{ $error }}</li>
-    @endforeach
-    </ul>
-</div>
-@endif
+        <div class="login_error">
+            <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+            </ul>
+        </div>
+    @endif
     <a class="auth-link" href="/register">>>アカウントをお持ちで無い方はこちら<<</a>
     <form action="{{ route('login') }}" method="post">
     @csrf 

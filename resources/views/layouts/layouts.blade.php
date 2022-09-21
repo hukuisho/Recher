@@ -24,6 +24,7 @@
         @default
             @if(strpos($_SERVER['REQUEST_URI'],'user') == true)
                 <title>マイページ</title>
+                <script src="{{ asset('/js/member/user/user.js') }}"></script>
             @else 
                 <title>Recher - 理想の生き方を見つけよう -</title>
             @endif

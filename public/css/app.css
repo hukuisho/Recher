@@ -378,14 +378,23 @@ button {
 .my_page__relationship-link {
   color: rgba(9, 77, 134, 0.517);
   text-decoration: underline;
+  font-weight: bold;
+  font-size: 150%;
+  margin: 0% 5%;
 }
 .my_page__edit-link {
   color: rgba(9, 77, 134, 0.517);
   text-decoration: underline;
+  font-weight: bold;
+  font-size: 150%;
+  margin: 0% 5%;
 }
 .my_page__show-link {
   color: rgba(9, 77, 134, 0.517);
   text-decoration: underline;
+  font-weight: bold;
+  font-size: 150%;
+  margin: 0% 5%;
 }
 .my_page__logout {
   width: 85px;
@@ -409,8 +418,9 @@ button {
   background-color: rgba(255, 255, 255, 0.25);
   text-shadow: goldenrod 1px 0px 1px, goldenrod -1px 0px 1px, goldenrod 0px -1px 1px, goldenrod -1px 0px 1px, goldenrod 1px 1px 1px, goldenrod -1px 1px 1px, goldenrod 1px -1px 1px, goldenrod -1px -1px 1px, goldenrod 1px 1px 1px, goldenrod -1px 1px 1px;
 }
-.user-edit__form-list,
-.user-show__form-list {
+.user-edit__form-list, .user-edit__list,
+.user-show__form-list,
+.user-show__list {
   width: 90%;
   margin: 4% auto;
   text-align: center;
@@ -451,6 +461,11 @@ button {
   margin: 3% 0%;
   padding: 3%;
   cursor: pointer;
+}
+.user-edit__warning-text,
+.user-show__warning-text {
+  color: rgb(189, 55, 55);
+  text-shadow: rgb(181, 148, 87) 1px 0px 1px, rgb(181, 148, 87) -1px 0px 1px, rgb(181, 148, 87) 0px -1px 1px, rgb(181, 148, 87) -1px 0px 1px, rgb(181, 148, 87) 1px 1px 1px, rgb(181, 148, 87) -1px 1px 1px, rgb(181, 148, 87) 1px -1px 1px, rgb(181, 148, 87) -1px -1px 1px, rgb(181, 148, 87) 1px 1px 1px, rgb(181, 148, 87) -1px 1px 1px;
 }
 
 .search {
