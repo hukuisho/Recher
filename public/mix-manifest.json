@@ -3,7 +3,6 @@
     "/js/commons/header.js": "/js/commons/header.js",
     "/js/commons/footer.js": "/js/commons/footer.js",
     "/js/guest/index.js": "/js/guest/index.js",
-    "/js/member/user/user.js": "/js/member/user/user.js",
     "/js/member/timeline/timeline.js": "/js/member/timeline/timeline.js",
     "/js/member/top/top.js": "/js/member/top/top.js",
     "/js/member/search/search.js": "/js/member/search/search.js",
