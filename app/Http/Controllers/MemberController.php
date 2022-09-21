@@ -16,7 +16,7 @@ class MemberController extends Controller
 
         return view('member/user/my_page')->with('viewUseArray',$viewUseArray);
     }
-    public function profile_show(Request $request) {
+    public function profile_show() {
 
         $viewUseArray = array(
         );
@@ -25,7 +25,12 @@ class MemberController extends Controller
     public function profile_edit(Request $request) {
         $user_form = $request->all();
         $user = Auth::user();
-        $user->fill($user_form)->save();
+        if(!empty($user_form["name"]) && !empty($user_form["email"])){
+            $user->fill($user_form)->save();
+            return redirect('member/user'); 
+        } else {
+            return view('member.user.edit'); 
+        }
         $viewUseArray = array(
         );
         return view('member.user.edit')->with('viewUseArray',$viewUseArray);

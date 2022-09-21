@@ -9,6 +9,9 @@
         &__#{$user} {
             color: rgba(9, 77, 134, 0.517);
             text-decoration: underline;
+            font-weight: bold;
+            font-size: 150%;
+            margin: 0% 5%;
         }
     }
     &__logout {
@@ -26,7 +29,8 @@
     &__title {
         @include userPageTitle;
     }
-    &__form-list {
+    &__form-list,
+    &__list {
         width: 90%;
         margin: 4% auto;
         text-align: center;
@@ -61,5 +65,9 @@
         margin: 3% 0%;
         padding: 3%;
         cursor: pointer;
+    }
+    &__warning-text {
+        color: rgb(189 55 55);
+        @include textShadowColor(rgb(181, 148, 87));
     }
 }
