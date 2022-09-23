@@ -10,7 +10,7 @@ addEventListener("DOMContentLoaded", function () {
   if (document.URL.match("edit")) {
     var isUserEditKeyName = "visited";
     var isUserEditKeyValue = "true";
-    var isFirstAlertText = "不適切な名前やメールアドレスの入力では、\n更新されることはありません";
+    var isFirstAlertText = "不適切な名前や\nメールアドレスの入力では、\n更新されることはありません";
     var visitedConsoleLogText = "訪問済み";
 
     if (!localStorage.getItem(isUserEditKeyName)) {

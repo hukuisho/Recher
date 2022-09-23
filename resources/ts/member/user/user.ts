@@ -3,7 +3,7 @@ addEventListener("DOMContentLoaded", () => {
         const isUserEditKeyName: string = "visited";
         const isUserEditKeyValue: string = "true";
         const isFirstAlertText: string =
-            "不適切な名前やメールアドレスの入力では、\n更新されることはありません";
+            "不適切な名前や\nメールアドレスの入力では、\n更新されることはありません";
         const visitedConsoleLogText: string = "訪問済み";
         if (!localStorage.getItem(isUserEditKeyName)) {
             //sessionStorageにキーと値を追加
