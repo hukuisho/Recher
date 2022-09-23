@@ -25,5 +25,6 @@ a {
 input[type="submit"],
 button {
     -webkit-appearance: none;
-    background-color: rgb(141 97 221);
+    transition: all 1000ms ease-in-out;
+    animation: backgroundColorChange 2s linear infinite;
 }

@@ -22,4 +22,7 @@
             box-shadow: boxShadowColor(5px, "pattern3");
         }
     }
+    & input {
+        animation: none;
+    }
 }

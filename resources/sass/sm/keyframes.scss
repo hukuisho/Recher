@@ -25,6 +25,17 @@
         text-shadow: 4px 0px 0px rebeccapurple;
     }
 }
+@keyframes backgroundColorChange {
+    from {
+        background-color: rgb(141 97 221);
+    }
+    50% {
+        background-color: rgb(88, 119, 221);
+    }
+    to {
+        background-color: rgb(141 97 221);
+    }
+}
 @keyframes logoAnime {
     from {
         color: rgba(216, 112, 147, 0.95);
@@ -50,17 +61,17 @@
 }
 
 @keyframes diagonal-move-anim {
-    0% {
+    from {
         transform: translate(0, 0);
     }
 
-    100% {
+    to {
         transform: translate(-250px, 250px);
     }
 }
 
 @keyframes flash {
-    0% {
+    from {
         opacity: 1;
     }
 
@@ -68,7 +79,7 @@
         opacity: 0;
     }
 
-    100% {
+    to {
         opacity: 1;
     }
 }

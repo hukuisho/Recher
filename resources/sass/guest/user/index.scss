@@ -6,7 +6,7 @@
 }
 .guest-top {
     justify-content: center;
-    background: teal;
+    background-color: #757575ba;
     display: flex;
     width: 100%;
     border: #ffff 2px solid;
@@ -42,7 +42,7 @@ $authTitleLists: register, login;
     width: 90%;
     margin: 4% auto;
     text-align: center;
-    background-color: teal;
+    background-color: #757575ba;
     border: 2px goldenrod solid;
     padding: 3%;
     &__menu {

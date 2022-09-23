@@ -19,6 +19,7 @@
         margin: 5% auto;
         & button {
             padding: 6%;
+            animation: none;
             background-color: #ffff;
         }
     }
@@ -34,7 +35,7 @@
         width: 90%;
         margin: 4% auto;
         text-align: center;
-        background-color: teal;
+        background-color: #757575ba;
         border: 2px goldenrod solid;
         padding: 3%;
     }
@@ -67,7 +68,9 @@
         cursor: pointer;
     }
     &__warning-text {
-        color: rgb(189 55 55);
+        color: rgb(181 8 8);
+        transition: all 1000ms ease-in-out;
+        animation: flash 3s linear infinite;
         @include textShadowColor(rgb(181, 148, 87));
     }
 }
