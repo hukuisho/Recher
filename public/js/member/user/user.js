@@ -8,18 +8,20 @@ var __webpack_exports__ = {};
 
 addEventListener("DOMContentLoaded", function () {
   if (document.URL.match("edit")) {
-    var isUserEditKeyName = "visited";
+    var isUserEditKey = "visited";
     var isUserEditKeyValue = "true";
+    var isWarningText = document.querySelector("#isWarningText");
     var isFirstAlertText = "不適切な名前や\nメールアドレスの入力では、\n更新されることはありません";
-    var visitedConsoleLogText = "訪問済み";
+    var visitedConsoleLogText = "不適切な名前や" + "<br>" + "メールアドレスの入力では、" + "<br>" + "更新されることはありません";
 
-    if (!localStorage.getItem(isUserEditKeyName)) {
+    if (!localStorage.getItem(isUserEditKey)) {
       //sessionStorageにキーと値を追加
-      localStorage.setItem(isUserEditKeyName, isUserEditKeyValue); //ここに初回アクセス時の処理
+      localStorage.setItem(isUserEditKey, isUserEditKeyValue);
+      isWarningText.innerHTML = visitedConsoleLogText; //ここに初回アクセス時の処理
 
       alert(isFirstAlertText);
     } else {
-      console.log(visitedConsoleLogText);
+      isWarningText.innerHTML = visitedConsoleLogText;
     }
   }
 });

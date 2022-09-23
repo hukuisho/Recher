@@ -13,11 +13,7 @@
         <input class="user-edit__input" value="{{ Auth::user()->email }}" name="email"><br>
         <button id="userEditButton" class="user-edit__button" type="submit" value="">更新</button>
 
-        <h5 class="user-edit__warning-text">
-            不適切な名前や<br>
-            メールアドレスの入力では、<br>
-            更新されることはありません。
-        </h5>
+        <h5 id="isWarningText" class="user-edit__warning-text"></h5>
     </form>
     <form class="my_page__logout" action="{{ route('logout') }}" method="post">
         @csrf 
