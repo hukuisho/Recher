@@ -1,8 +1,36 @@
 //ゲストのTOP
 .auth-select {
-    width: 80%;
+    width: 90%;
     text-align: center;
     margin: 10% auto;
+    &__text {
+        margin: 10% auto;
+    }
+    &__terms-of-service {
+        width: 100%;
+        margin: 5% auto;
+        text-align: center;
+        background-color: #0bd;
+        &__text {
+            width: 100%;
+            margin: 0 auto;
+            padding: 3% 0;
+            letter-spacing: 2px;
+            background-color: rgb(230, 153, 9);
+            &::marker {
+                color: #ffff;
+            }
+            &__main {
+                width: 95%;
+                margin: 0% auto;
+                text-align: left;
+                background-color: #ffff;
+                &__detail {
+                    padding: 5%;
+                }
+            }
+        }
+    }
 }
 .guest-top {
     justify-content: center;

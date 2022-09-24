@@ -25,15 +25,16 @@ class MemberController extends Controller
     public function profile_edit(Request $request) {
         $user_form = $request->all();
         $user = Auth::user();
-        if(!empty($user_form["name"]) && !empty($user_form["email"])){
-            $user->fill($user_form)->save();
-            return redirect('member/user'); 
-        } else {
-            return view('member.user.edit'); 
+        try{
+            if(!empty($user_form["name"]) && !empty($user_form["email"])){
+                $user->fill($user_form)->save();
+                return redirect('member/user'); 
+            } else {
+                return view('member.user.edit'); 
+            }
+        } catch (Exception $ex) {
+            return view('member.user.edit');
         }
-        $viewUseArray = array(
-        );
-        return view('member.user.edit')->with('viewUseArray',$viewUseArray);
     }
     public function top() {
         $viewUseArray = array(
