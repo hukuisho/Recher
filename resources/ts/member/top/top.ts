@@ -1,13 +1,22 @@
 addEventListener("DOMContentLoaded", () => {
     if (location.pathname == "/member") {
+        interface userTopKeyValue<T> {
+            key: T;
+            value: T;
+        }
+        const loadingAnimationKeyValue: userTopKeyValue<string> = {
+            key: "visited",
+            value: "true",
+        };
         const richerDisplay = document.querySelector(".richer");
         const getBody = document.querySelector("body");
-        const loadAnimationKey = "visited";
-        const loadAnimationKeyValue = "true";
 
-        if (!sessionStorage.getItem(loadAnimationKey)) {
+        if (!sessionStorage.getItem(loadingAnimationKeyValue["key"])) {
             //sessionStorageにキーと値を追加
-            sessionStorage.setItem(loadAnimationKey, loadAnimationKeyValue);
+            sessionStorage.setItem(
+                loadingAnimationKeyValue["key"],
+                loadingAnimationKeyValue["value"]
+            );
 
             //ここに初回アクセス時の処理
             richerDisplay?.setAttribute("style", "display:none;");

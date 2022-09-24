@@ -8,15 +8,17 @@ var __webpack_exports__ = {};
 
 addEventListener("DOMContentLoaded", function () {
   if (document.URL.match("edit")) {
-    var isUserEditKey = "visited";
-    var isUserEditKeyValue = "true";
+    var userEditKeyValue = {
+      key: "visited",
+      value: "true"
+    };
     var isWarningText = document.querySelector("#isWarningText");
     var isFirstAlertText = "不適切な名前や\nメールアドレスの入力では、\n更新されることはありません";
     var visitedConsoleLogText = "不適切な名前や" + "<br>" + "メールアドレスの入力では、" + "<br>" + "更新されることはありません";
 
-    if (!localStorage.getItem(isUserEditKey)) {
+    if (!localStorage.getItem(userEditKeyValue["key"])) {
       //sessionStorageにキーと値を追加
-      localStorage.setItem(isUserEditKey, isUserEditKeyValue);
+      localStorage.setItem(userEditKeyValue["key"], userEditKeyValue["value"]);
       isWarningText.innerHTML = visitedConsoleLogText; //ここに初回アクセス時の処理
 
       alert(isFirstAlertText);
