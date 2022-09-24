@@ -1,7 +1,8 @@
 .richer__footer {
     width: 100%;
     height: 80px;
-    background-color: rgb(9 47 255 / 66%);
+    background-image: gradientColor(180deg, rgb(9 47 255 / 66%), #750082ad);
+    // background-color: rgb(9 47 255 / 66%);
     position: fixed;
     bottom: 0;
     display: grid;

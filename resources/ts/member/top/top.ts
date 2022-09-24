@@ -1,8 +1,32 @@
 addEventListener("DOMContentLoaded", () => {
+    if (location.pathname == "/member") {
+        const richerDisplay = document.querySelector(".richer");
+        const getBody = document.querySelector("body");
+        const loadAnimationKey = "visited";
+        const loadAnimationKeyValue = "true";
+
+        if (!sessionStorage.getItem(loadAnimationKey)) {
+            //sessionStorageにキーと値を追加
+            sessionStorage.setItem(loadAnimationKey, loadAnimationKeyValue);
+
+            //ここに初回アクセス時の処理
+            richerDisplay?.setAttribute("style", "display:none;");
+            getBody?.setAttribute("class", "loading");
+            console.log("ログインしました");
+            let time = 0;
+            setTimeout(() => {
+                getBody?.classList.remove("loading");
+                richerDisplay?.setAttribute("style", "display:block;");
+            }, (time += 2500));
+        } else {
+            //ここに通常アクセス時の処理
+            console.log("ログイン中です");
+        }
+    }
     const getGreetingText = document.querySelector("#getGreetingText");
 
     const GREETING_TYPE: readonly string[] = [
-        "おはようございます",
+        "おはよう",
         "こんにちは",
         "こんばんは",
     ];

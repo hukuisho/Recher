@@ -1,3 +1,31 @@
+@-webkit-keyframes loading {
+  0% {
+    opacity: 0;
+    text-shadow: 0 0 0 #fff, 0 0 0 #fff;
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 0 #fff, 0 0 0 #fff;
+  }
+}
+@keyframes loading {
+  0% {
+    opacity: 0;
+    text-shadow: 0 0 0 #fff, 0 0 0 #fff;
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 0 #fff, 0 0 0 #fff;
+  }
+}
 @-webkit-keyframes logoAnime {
   from {
     color: rgba(216, 112, 147, 0.95);
@@ -260,7 +288,7 @@ button {
   outline: 3px solid goldenrod;
   outline-offset: -3px;
   z-index: 1;
-  background-image: linear-gradient(45deg, #72e4cb, rgba(216, 65, 216, 0.5529411765));
+  background-image: linear-gradient(45deg, #0bd, rgba(216, 65, 216, 0.5529411765));
 }
 .richer__header__navList {
   display: flex;
@@ -314,7 +342,7 @@ button {
 .richer__footer {
   width: 100%;
   height: 80px;
-  background-color: rgba(9, 47, 255, 0.66);
+  background-image: linear-gradient(180deg, rgba(9, 47, 255, 0.66), rgba(117, 0, 130, 0.6784313725));
   position: fixed;
   bottom: 0;
   display: grid;
@@ -389,6 +417,7 @@ button {
   overflow: hidden;
   font-family: monospace;
   font-size: 2em;
+  letter-spacing: 4px;
   color: bisque;
   text-shadow: saddlebrown 1px 0px 1px, saddlebrown -1px 0px 1px, saddlebrown 0px -1px 1px, saddlebrown -1px 0px 1px, saddlebrown 1px 1px 1px, saddlebrown -1px 1px 1px, saddlebrown 1px -1px 1px, saddlebrown -1px -1px 1px, saddlebrown 1px 1px 1px, saddlebrown -1px 1px 1px;
 }
@@ -525,6 +554,21 @@ button {
 .search input {
   -webkit-animation: none;
           animation: none;
+}
+
+.loading {
+  background-image: linear-gradient(45deg, #0bd, rgba(216, 65, 216, 0.5529411765));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 300%;
+}
+.loading::before {
+  content: "Richer";
+  opacity: 0;
+  -webkit-animation: loading 2s linear forwards;
+          animation: loading 2s linear forwards;
 }
 
 .richer {

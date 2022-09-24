@@ -17,6 +17,19 @@
 @import "member/bell/bell";
 @import "member/renraku/renraku";
 
+.loading {
+    background-image: gradientColor(45deg, #0bd, #d841d88d);
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 300%;
+    &::before {
+        content: "Richer";
+        opacity: 0;
+        animation: loading 2s linear forwards;
+    }
+}
 .richer {
     width: 100%;
     height: 100%;

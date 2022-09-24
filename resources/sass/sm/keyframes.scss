@@ -1,3 +1,17 @@
+@keyframes loading {
+    0% {
+        opacity: 0;
+        text-shadow: 0 0 0 #fff, 0 0 0 #fff;
+    }
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 0 #fff, 0 0 0 #fff;
+    }
+}
 @keyframes logoAnime {
     from {
         color: rgba(216, 112, 147, 0.95);
