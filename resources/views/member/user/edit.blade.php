@@ -7,12 +7,21 @@
     action=""
     method="post">
     @csrf
-         <img
+        <input
+            type="image"
             id="changeIcon"
             class=""
-            src="/images/icon_1.png"
+            src="{{ Auth::user()->profile_image }}"
             alt="アイコン"
+            value=""
         />
+        <select id="selectIconList" name="profile_image">
+            <option value="/images/icon_1.png"></option>
+            <option value="/images/icon_2.png"></option>
+            <option value="/images/icon_3.png"></option>
+            <option value="/images/icon_4.png"></option>
+            <option value="/images/icon_5.png"></option>
+        </select>
         <p class="user-edit__menu">名前</p>
         <input class="user-edit__input" value="{{ Auth::user()->name }}" name="name">
         <p class="user-edit__menu">メール</p>
