@@ -21,14 +21,8 @@ addEventListener("DOMContentLoaded", function () {
 
     var changeIcon = document.querySelector("#changeIcon");
     selectIconList === null || selectIconList === void 0 ? void 0 : selectIconList.addEventListener("change", function () {
-      switch (Object(selectIconList).value) {
-        case Object(selectIconList).value:
-          changeIcon.setAttribute("src", Object(selectIconList).value);
-          break;
-
-        default:
-          changeIcon.setAttribute("src", "/images/icon_1.png");
-          break;
+      if (Object(selectIconList).value) {
+        changeIcon.setAttribute("src", Object(selectIconList).value);
       }
     }); // icon e
 

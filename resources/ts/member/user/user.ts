@@ -22,16 +22,8 @@ addEventListener("DOMContentLoaded", () => {
         // セレクトボックスの値によって画像を切り替える。
         const changeIcon = document.querySelector("#changeIcon");
         selectIconList?.addEventListener("change", () => {
-            switch (Object(selectIconList).value) {
-                case Object(selectIconList).value:
-                    changeIcon!.setAttribute(
-                        "src",
-                        Object(selectIconList).value
-                    );
-                    break;
-                default:
-                    changeIcon!.setAttribute("src", "/images/icon_1.png");
-                    break;
+            if (Object(selectIconList).value) {
+                changeIcon!.setAttribute("src", Object(selectIconList).value);
             }
         });
         // icon e

@@ -28,7 +28,7 @@ class MemberController extends Controller
         $user = Auth::user();
         
         try{
-            if(!empty($user_form["name"]) && !empty($user_form["email"])){
+            if(!empty($user_form["profile_image"]) &&!empty($user_form["name"]) && !empty($user_form["email"])){
                 // dd($user_form);
                 $user->fill($user_form)->save();
                 return redirect('member/user'); 
