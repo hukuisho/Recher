@@ -17,7 +17,7 @@ addEventListener("DOMContentLoaded", function () {
     var visitedConsoleLogText = "不適切な名前や" + "<br>" + "メールアドレスの入力では、" + "<br>" + "更新されることはありません";
 
     if (!localStorage.getItem(userEditKeyValue["key"])) {
-      //sessionStorageにキーと値を追加
+      //localStorageにキーと値を追加
       localStorage.setItem(userEditKeyValue["key"], userEditKeyValue["value"]);
       isWarningText.innerHTML = visitedConsoleLogText; //ここに初回アクセス時の処理
 

@@ -3,6 +3,7 @@
 <div class="user-edit">
     <h2 class="user-show__title">詳細</h2>
     <div class="user-show__list">
+        <img id="userIcon" class="my_page__userIcon" src="/images/icon_1.png" alt="アイコン">
         <p class="user-show__menu">名前</p>
         <p class="user-show__menu__name">{{ Auth::user()->name }}</p>
         <p class="user-show__menu">メール</p>

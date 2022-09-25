@@ -1,6 +1,10 @@
 .my_page {
     width: 100%;
 
+    &__userIcon {
+        width: 70%;
+    }
+
     &__userName {
         margin: 2% auto;
     }
@@ -67,10 +71,14 @@
         padding: 3%;
         cursor: pointer;
     }
+    &__hr {
+        width: 70%;
+        margin: 3% auto;
+    }
     &__warning-text {
         color: rgb(181 8 8);
-        transition: all 1000ms ease-in-out;
-        animation: flash 3s linear infinite;
+        // transition: all 1000ms ease-in-out;
+        // animation: flash 3s linear infinite;
         @include textShadowColor(rgb(181, 148, 87));
     }
 }

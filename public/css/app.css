@@ -453,6 +453,9 @@ button {
 .my_page {
   width: 100%;
 }
+.my_page__userIcon {
+  width: 70%;
+}
 .my_page__userName {
   margin: 2% auto;
 }
@@ -545,12 +548,14 @@ button {
   padding: 3%;
   cursor: pointer;
 }
+.user-edit__hr,
+.user-show__hr {
+  width: 70%;
+  margin: 3% auto;
+}
 .user-edit__warning-text,
 .user-show__warning-text {
   color: rgb(181, 8, 8);
-  transition: all 1000ms ease-in-out;
-  -webkit-animation: flash 3s linear infinite;
-          animation: flash 3s linear infinite;
   text-shadow: rgb(181, 148, 87) 1px 0px 1px, rgb(181, 148, 87) -1px 0px 1px, rgb(181, 148, 87) 0px -1px 1px, rgb(181, 148, 87) -1px 0px 1px, rgb(181, 148, 87) 1px 1px 1px, rgb(181, 148, 87) -1px 1px 1px, rgb(181, 148, 87) 1px -1px 1px, rgb(181, 148, 87) -1px -1px 1px, rgb(181, 148, 87) 1px 1px 1px, rgb(181, 148, 87) -1px 1px 1px;
 }
 

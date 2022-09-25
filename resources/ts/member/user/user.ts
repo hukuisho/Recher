@@ -1,9 +1,9 @@
 addEventListener("DOMContentLoaded", () => {
+    interface userTopKeyValue<T> {
+        key: T;
+        value: T;
+    }
     if (document.URL.match("edit")) {
-        interface userTopKeyValue<T> {
-            key: T;
-            value: T;
-        }
         const userEditKeyValue: userTopKeyValue<string> = {
             key: "visited",
             value: "true",
@@ -18,7 +18,7 @@ addEventListener("DOMContentLoaded", () => {
             "<br>" +
             "更新されることはありません";
         if (!localStorage.getItem(userEditKeyValue["key"])) {
-            //sessionStorageにキーと値を追加
+            //localStorageにキーと値を追加
             localStorage.setItem(
                 userEditKeyValue["key"],
                 userEditKeyValue["value"]
