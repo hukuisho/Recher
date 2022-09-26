@@ -34,6 +34,9 @@
     &__title {
         @include userPageTitle;
     }
+    &__icon {
+        width: 70%;
+    }
     &__form-list,
     &__list {
         width: 90%;
@@ -47,13 +50,26 @@
         color: palegoldenrod;
         font-size: 175%;
         @include textShadowColor(rgb(181, 87, 87));
-        $showProfile: name, email;
+        $showProfile: name, email, id;
         @each $profile in $showProfile {
             &__#{$profile} {
                 margin: 3% 0%;
                 font-size: 130%;
             }
         }
+    }
+    &__select-icon-list {
+        width: 80%;
+        margin: 5%;
+        padding: 5px 0;
+        text-align: center;
+        background-color: goldenrod;
+        border-radius: 5px;
+        color: #ffff;
+        cursor: pointer;
+        outline: none;
+        -webkit-outline: none;
+        -webkit-border-radius: 5px;
     }
     &__input {
         width: 60%;

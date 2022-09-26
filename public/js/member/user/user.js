@@ -9,13 +9,13 @@ var __webpack_exports__ = {};
 addEventListener("DOMContentLoaded", function () {
   if (document.URL.match("edit")) {
     // icon s
-    var PATTERN = ["アイコン１", "アイコン2", "アイコン3", "アイコン4", "アイコン5"];
+    var PATTERN_REPERTOIRE = ["アイコン１", "アイコン2", "アイコン3", "アイコン4", "アイコン5"];
     var getSelctIconOption = document.querySelectorAll("option");
     var ICON_OPTION_LIST = Object(getSelctIconOption).length;
     var selectIconList = document.querySelector("#selectIconList");
 
     for (var i = 0; i < ICON_OPTION_LIST; i++) {
-      Object(getSelctIconOption[i]).innerHTML = PATTERN[i];
+      Object(getSelctIconOption[i]).innerHTML = PATTERN_REPERTOIRE[i];
     } // セレクトボックスの値によって画像を切り替える。
 
 

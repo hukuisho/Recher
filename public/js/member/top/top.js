@@ -12,7 +12,7 @@ addEventListener("DOMContentLoaded", function () {
       key: "visited",
       value: "true"
     };
-    var richerDisplay = document.querySelector(".richer");
+    var richerDisplay = document.querySelector("#richer");
     var getBody = document.querySelector("body");
 
     if (!sessionStorage.getItem(loadingAnimationKeyValue["key"])) {

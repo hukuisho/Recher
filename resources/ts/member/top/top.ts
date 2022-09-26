@@ -8,7 +8,7 @@ addEventListener("DOMContentLoaded", () => {
             key: "visited",
             value: "true",
         };
-        const richerDisplay = document.querySelector(".richer");
+        const richerDisplay = document.querySelector("#richer");
         const getBody = document.querySelector("body");
 
         if (!sessionStorage.getItem(loadingAnimationKeyValue["key"])) {

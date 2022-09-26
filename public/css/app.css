@@ -10,6 +10,7 @@
   100% {
     opacity: 1;
     text-shadow: 0 0 0 #fff, 0 0 0 #fff;
+    transform: scale(1.5);
   }
 }
 @keyframes loading {
@@ -24,6 +25,7 @@
   100% {
     opacity: 1;
     text-shadow: 0 0 0 #fff, 0 0 0 #fff;
+    transform: scale(1.5);
   }
 }
 @-webkit-keyframes logoAnime {
@@ -438,7 +440,7 @@ button {
 }
 
 .greetingText {
-  width: 9ch;
+  width: 10ch;
   -webkit-animation: typing 2s steps(22), step-end infinite alternate;
           animation: typing 2s steps(22), step-end infinite alternate;
   white-space: nowrap;
@@ -504,6 +506,10 @@ button {
   background-color: rgba(255, 255, 255, 0.25);
   text-shadow: goldenrod 1px 0px 1px, goldenrod -1px 0px 1px, goldenrod 0px -1px 1px, goldenrod -1px 0px 1px, goldenrod 1px 1px 1px, goldenrod -1px 1px 1px, goldenrod 1px -1px 1px, goldenrod -1px -1px 1px, goldenrod 1px 1px 1px, goldenrod -1px 1px 1px;
 }
+.user-edit__icon,
+.user-show__icon {
+  width: 70%;
+}
 .user-edit__form-list, .user-edit__list,
 .user-show__form-list,
 .user-show__list {
@@ -529,6 +535,25 @@ button {
 .user-show__menu__email {
   margin: 3% 0%;
   font-size: 130%;
+}
+.user-edit__menu__id,
+.user-show__menu__id {
+  margin: 3% 0%;
+  font-size: 130%;
+}
+.user-edit__select-icon-list,
+.user-show__select-icon-list {
+  width: 80%;
+  margin: 5%;
+  padding: 5px 0;
+  text-align: center;
+  background-color: goldenrod;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  -webkit-outline: none;
+  -webkit-border-radius: 5px;
 }
 .user-edit__input,
 .user-show__input {

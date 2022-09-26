@@ -6,7 +6,7 @@ addEventListener("DOMContentLoaded", () => {
 
     if (document.URL.match("edit")) {
         // icon s
-        const PATTERN: readonly string[] = [
+        const PATTERN_REPERTOIRE: readonly string[] = [
             "アイコン１",
             "アイコン2",
             "アイコン3",
@@ -17,7 +17,7 @@ addEventListener("DOMContentLoaded", () => {
         const ICON_OPTION_LIST = Object(getSelctIconOption).length;
         const selectIconList = document.querySelector("#selectIconList");
         for (let i = 0; i < ICON_OPTION_LIST; i++) {
-            Object(getSelctIconOption[i]).innerHTML = PATTERN[i];
+            Object(getSelctIconOption[i]).innerHTML = PATTERN_REPERTOIRE[i];
         }
         // セレクトボックスの値によって画像を切り替える。
         const changeIcon = document.querySelector("#changeIcon");

@@ -23,7 +23,7 @@
         @endswitch
     </head>
     <body>
-        <div class="richer">
+        <div id="richer" class="richer">
             @include('layouts.header')
             <div class="richer__container">
                 <div class="richer__container__space"></div>

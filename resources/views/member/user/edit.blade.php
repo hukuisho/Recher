@@ -10,12 +10,12 @@
         <input
             type="image"
             id="changeIcon"
-            class=""
+            class="user-edit__icon"
             src="{{ Auth::user()->profile_image }}"
             alt="アイコン"
             value=""
         />
-        <select id="selectIconList" name="profile_image">
+        <select id="selectIconList" class="user-edit__select-icon-list" name="profile_image">
             <option value="/images/icon_1.png"></option>
             <option value="/images/icon_2.png"></option>
             <option value="/images/icon_3.png"></option>
