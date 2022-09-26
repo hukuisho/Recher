@@ -6,7 +6,7 @@ addEventListener("DOMContentLoaded", () => {
 
     if (document.URL.match("edit")) {
         // icon s
-        const PATTERN_KEY: readonly string[] = [
+        const PATTERN: readonly string[] = [
             "アイコン１",
             "アイコン2",
             "アイコン3",
@@ -17,7 +17,7 @@ addEventListener("DOMContentLoaded", () => {
         const ICON_OPTION_LIST = Object(getSelctIconOption).length;
         const selectIconList = document.querySelector("#selectIconList");
         for (let i = 0; i < ICON_OPTION_LIST; i++) {
-            Object(getSelctIconOption[i]).innerHTML = PATTERN_KEY[i];
+            Object(getSelctIconOption[i]).innerHTML = PATTERN[i];
         }
         // セレクトボックスの値によって画像を切り替える。
         const changeIcon = document.querySelector("#changeIcon");
@@ -34,7 +34,7 @@ addEventListener("DOMContentLoaded", () => {
         const isWarningText = document.querySelector("#isWarningText");
         const isFirstAlertText: string =
             "不適切な名前や\nメールアドレスの入力では、\n更新されることはありません";
-        const visitedConsoleLogText: string =
+        const visitedTrueText: string =
             "不適切な名前や" +
             "<br>" +
             "メールアドレスの入力では、" +
@@ -46,11 +46,11 @@ addEventListener("DOMContentLoaded", () => {
                 userEditKeyValue["key"],
                 userEditKeyValue["value"]
             );
-            isWarningText!.innerHTML = visitedConsoleLogText;
+            isWarningText!.innerHTML = visitedTrueText;
             //ここに初回アクセス時の処理
             alert(isFirstAlertText);
         } else {
-            isWarningText!.innerHTML = visitedConsoleLogText;
+            isWarningText!.innerHTML = visitedTrueText;
         }
     }
 });
