@@ -11,6 +11,11 @@ use App\Models;
 
 class MemberController extends Controller
 {
+    public function top() {
+        $viewUseArray = array(
+        );
+        return view('member/top/top')->with('viewUseArray',$viewUseArray);
+    }
     public function my_page() {
         $viewUseArray = array(
         );
@@ -40,10 +45,25 @@ class MemberController extends Controller
             return view('member.user.edit');
         }
     }
-    public function top() {
+    public function timeline_index() {
         $viewUseArray = array(
         );
-        return view('member/top/top')->with('viewUseArray',$viewUseArray);
+        return view('member/timeline/index')->with('viewUseArray',$viewUseArray);
+    }
+    public function schedule_index() {
+        $viewUseArray = array(
+        );
+        return view('member/schedule/index')->with('viewUseArray',$viewUseArray);
+    }
+    public function bell_index() {
+        $viewUseArray = array(
+        );
+        return view('member/bell/index')->with('viewUseArray',$viewUseArray);
+    }
+    public function renraku_index() {
+        $viewUseArray = array(
+        );
+        return view('member/bell/index')->with('viewUseArray',$viewUseArray);
     }
     public function search() {
         $text = "ググる!!!";
