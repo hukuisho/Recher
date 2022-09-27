@@ -1,5 +1,5 @@
 addEventListener("DOMContentLoaded", () => {
-    interface userTopKeyValue<T> {
+    interface memberUserKeyValue<T> {
         key: T;
         value: T;
     }
@@ -27,7 +27,7 @@ addEventListener("DOMContentLoaded", () => {
             }
         });
         // icon e
-        const userEditKeyValue: userTopKeyValue<string> = {
+        const userEditKeyValue: memberUserKeyValue<string> = {
             key: "visited",
             value: "true",
         };

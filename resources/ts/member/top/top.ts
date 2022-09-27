@@ -1,10 +1,10 @@
 addEventListener("DOMContentLoaded", () => {
     if (location.pathname == "/member") {
-        interface userTopKeyValue<T> {
+        interface memberTopKeyValue<T> {
             key: T;
             value: T;
         }
-        const loadingAnimationKeyValue: userTopKeyValue<string> = {
+        const loadingAnimationKeyValue: memberTopKeyValue<string> = {
             key: "visited",
             value: "true",
         };
