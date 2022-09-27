@@ -55,6 +55,13 @@ class MemberController extends Controller
         );
         return view('member/schedule/index')->with('viewUseArray',$viewUseArray);
     }
+    public function search() {
+        $text = "ググる!!!";
+        $viewUseArray = array(
+            "text" => $text,
+        );
+        return view('member/search/index')->with('viewUseArray',$viewUseArray);
+    }
     public function bell_index() {
         $viewUseArray = array(
         );
@@ -64,13 +71,6 @@ class MemberController extends Controller
         $viewUseArray = array(
         );
         return view('member/bell/index')->with('viewUseArray',$viewUseArray);
-    }
-    public function search() {
-        $text = "ググる!!!";
-        $viewUseArray = array(
-            "text" => $text,
-        );
-        return view('member/search/index')->with('viewUseArray',$viewUseArray);
     }
 
 }
