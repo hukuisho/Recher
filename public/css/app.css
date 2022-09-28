@@ -630,7 +630,7 @@ button {
 .search hr {
   width: 80%;
   padding: 1px;
-  margin: 0 auto;
+  margin: 0 auto 1%;
   background-color: rgba(128, 128, 128, 0.7607843137);
 }
 .search__explanation-text {
