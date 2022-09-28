@@ -7,6 +7,7 @@ use App\Http\Controllers\CommonsController;
 use App\Http\Controllers\LayoutControlle;
 //非会員
 Route::get('/', [GuestController::class, 'top']);
+Route::get('/about', [GuestController::class, 'about']);
 //会員
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/member', [MemberController::class, 'top']);

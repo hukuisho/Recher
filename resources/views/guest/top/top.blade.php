@@ -2,6 +2,7 @@
 @section('content')
     <div class="auth-select">
         <h3 class="auth-select__text">{{$viewUseArray["welcome"]}}</h3>
+        <a class="about-page-link" href="/about">このアプリについて</a>
         <ul class="guest-top">
             <a class="guest-top__login" href="/login">
                 <li>{{$viewUseArray["login"]}}</li>
