@@ -25,4 +25,15 @@
     & input {
         animation: none;
     }
+    & hr {
+        width: 80%;
+        padding: 1px;
+        margin: 0 auto;
+        background-color: #808080c2;
+    }
+    &__explanation-text {
+        margin: 1% auto 2%;
+        width: 80%;
+        text-decoration: underline;
+    }
 }

@@ -19,5 +19,15 @@
             value="検索"
         />
         <input type="hidden" name="hl" value="ja" />
+        <hr>
+        <p class="search__explanation-text">
+            この機能をご利用する際は
+        </p>
+        <p class="search__explanation-text">
+            予めGoogleアカウントを
+        </p>
+        <p class="search__explanation-text">
+            お持ち頂くことが望ましいです。
+        </p>
     </form>
 @endsection

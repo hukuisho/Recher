@@ -627,6 +627,17 @@ button {
   -webkit-animation: none;
           animation: none;
 }
+.search hr {
+  width: 80%;
+  padding: 1px;
+  margin: 0 auto;
+  background-color: rgba(128, 128, 128, 0.7607843137);
+}
+.search__explanation-text {
+  margin: 1% auto 2%;
+  width: 80%;
+  text-decoration: underline;
+}
 
 .loading {
   background-image: linear-gradient(45deg, #0bd, rgba(216, 65, 216, 0.5529411765));
