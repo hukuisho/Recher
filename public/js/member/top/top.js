@@ -34,19 +34,15 @@ addEventListener("DOMContentLoaded", function () {
   }
 
   var getGreetingText = document.querySelector("#getGreetingText");
-  var GREETING_TYPE = ["おはよう", "こんにちは", "こんばんは"];
-  var MORNING = GREETING_TYPE[0],
-      AFTERNOON = GREETING_TYPE[1],
-      EVENING = GREETING_TYPE[2];
   var now = new Date();
   var hour = now.getHours();
 
   if (hour >= 4 && hour <= 10) {
-    getGreetingText.innerHTML = MORNING;
+    getGreetingText.innerHTML = "おはよう";
   } else if (hour >= 11 && hour <= 17) {
-    getGreetingText.innerHTML = AFTERNOON;
+    getGreetingText.innerHTML = "こんにちは";
   } else if (hour >= 18 || hour <= 3) {
-    getGreetingText.innerHTML = EVENING;
+    getGreetingText.innerHTML = "こんばんは";
   }
 });
 /******/ })()

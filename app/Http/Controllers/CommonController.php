@@ -15,7 +15,7 @@ class CommonController extends Controller
         return view('common/about/about')->with('viewUseArray',$viewUseArray);
     }
     public function notPage() {
-        $warningText = "不正なアクセスが行われました";
+        $warningText = "ページが存在しません";
         $redirectTopPath = "TOPへ戻る";
         $viewUseArray = array(
             "warningText" => $warningText,
