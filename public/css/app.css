@@ -467,7 +467,10 @@ button {
 }
 
 .my_page {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 3%;
 }
 .my_page__userIcon {
   width: 70%;
@@ -544,16 +547,19 @@ button {
 .user-show__menu__name {
   margin: 3% 0%;
   font-size: 130%;
+  color: white;
 }
 .user-edit__menu__email,
 .user-show__menu__email {
   margin: 3% 0%;
   font-size: 130%;
+  color: white;
 }
 .user-edit__menu__id,
 .user-show__menu__id {
   margin: 3% 0%;
   font-size: 130%;
+  color: white;
 }
 .user-edit__select-icon-list,
 .user-show__select-icon-list {
@@ -600,6 +606,9 @@ button {
 
 .search {
   margin: 10% auto;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 3%;
 }
 .search__text {
   margin-bottom: 4%;

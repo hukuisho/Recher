@@ -1,6 +1,8 @@
 .my_page {
-    width: 100%;
-
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(255 255 255 / 25%);
+    padding: 3%;
     &__userIcon {
         width: 70%;
     }
@@ -55,6 +57,7 @@
             &__#{$profile} {
                 margin: 3% 0%;
                 font-size: 130%;
+                color: #ffff;
             }
         }
     }
@@ -93,8 +96,6 @@
     }
     &__warning-text {
         color: rgb(181 8 8);
-        // transition: all 1000ms ease-in-out;
-        // animation: flash 3s linear infinite;
         @include textShadowColor(rgb(181, 148, 87));
     }
 }
