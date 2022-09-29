@@ -8,7 +8,8 @@ use App\Http\Controllers\CommonController;
 
 //共通
 Route::get('/about', [CommonController::class, 'about']);
-Route::fallback(function(){ //存在しないURLは自動的に/notPageにリダイレクトさせる。
+Route::fallback(function(){ 
+    //存在しないURLは自動的に/notPageにリダイレクトさせる。
     return redirect('/notPage'); 
 });
 Route::get('/notPage', [CommonController::class, 'notPage']);

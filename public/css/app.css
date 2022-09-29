@@ -498,31 +498,32 @@ button {
 .my_page {
   width: 80%;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(117, 117, 117, 0.7294117647);
   padding: 3%;
 }
 .my_page__userIcon {
   width: 70%;
 }
 .my_page__userName {
+  color: white;
   margin: 2% auto;
 }
 .my_page__relationship-link {
-  color: rgba(9, 77, 134, 0.517);
+  color: goldenrod;
   text-decoration: underline;
   font-weight: bold;
   font-size: 150%;
   margin: 0% 5%;
 }
 .my_page__edit-link {
-  color: rgba(9, 77, 134, 0.517);
+  color: goldenrod;
   text-decoration: underline;
   font-weight: bold;
   font-size: 150%;
   margin: 0% 5%;
 }
 .my_page__show-link {
-  color: rgba(9, 77, 134, 0.517);
+  color: goldenrod;
   text-decoration: underline;
   font-weight: bold;
   font-size: 150%;
