@@ -7,6 +7,12 @@
     @case("/")
         <title>非会員TOP</title>
         @break
+    @case("/")
+        <title>非会員TOP</title>
+        @break
+    @case("/notPage")
+        <title>不正なアクセスです</title>
+        @break
     @case ("/member")
         <title>会員TOP</title>
         @break

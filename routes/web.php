@@ -4,10 +4,16 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\CommonsController;
-use App\Http\Controllers\LayoutControlle;
+use App\Http\Controllers\CommonController;
+
+//共通
+Route::get('/about', [CommonController::class, 'about']);
+Route::fallback(function(){ //存在しないURLは自動的に/notPageにリダイレクトさせる。
+    return redirect('/notPage'); 
+});
+Route::get('/notPage', [CommonController::class, 'notPage']);
 //非会員
 Route::get('/', [GuestController::class, 'top']);
-Route::get('/about', [GuestController::class, 'about']);
 //会員
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/member', [MemberController::class, 'top']);

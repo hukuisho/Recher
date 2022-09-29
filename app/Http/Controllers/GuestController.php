@@ -20,14 +20,7 @@ class GuestController extends Controller
         );
         return view('guest/top/top')->with('viewUseArray',$viewUseArray);
     }
-    public function about() {
-        
-
-        $viewUseArray = array(
-            
-        );
-        return view('guest/about/about')->with('viewUseArray',$viewUseArray);
-    }
+    
     public function register() {
         return view('guest/user/register');
     }

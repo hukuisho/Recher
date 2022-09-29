@@ -1,0 +1,14 @@
+.notPage {
+    width: 80%;
+    margin: 0 auto;
+    &__warning-text {
+        margin: 20% 0;
+    }
+    &__top-text-link {
+        padding: 10%;
+        background-color: #0bd;
+        color: #ffff;
+        border: 3px goldenrod solid;
+        cursor: pointer;
+    }
+}
