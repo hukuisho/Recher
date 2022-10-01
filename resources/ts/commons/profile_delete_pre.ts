@@ -3,7 +3,6 @@ addEventListener("DOMContentLoaded", () => {
         const richerDisplayShow = document.querySelector("#richer");
         const getBodyShow = document.querySelector("body");
 
-        //ここに初回アクセス時の処理
         richerDisplayShow?.setAttribute("style", "display:none;");
         getBodyShow?.setAttribute("class", "delete");
         console.log("アカウント削除中");
