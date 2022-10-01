@@ -9,8 +9,7 @@ var __webpack_exports__ = {};
 addEventListener("DOMContentLoaded", function () {
   if (location.pathname == "/profile_delete_pre") {
     var richerDisplayShow = document.querySelector("#richer");
-    var getBodyShow = document.querySelector("body"); //ここに初回アクセス時の処理
-
+    var getBodyShow = document.querySelector("body");
     richerDisplayShow === null || richerDisplayShow === void 0 ? void 0 : richerDisplayShow.setAttribute("style", "display:none;");
     getBodyShow === null || getBodyShow === void 0 ? void 0 : getBodyShow.setAttribute("class", "delete");
     console.log("アカウント削除中");
