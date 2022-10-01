@@ -13,6 +13,9 @@
     @case("/notPage")
         <title>不正なアクセスです</title>
         @break
+    @case("/profile_delete_pre")
+        <title>アカウント削除中</title>
+        @break
     @case ("/member")
         <title>会員TOP</title>
         @break

@@ -8,6 +8,7 @@ use App\Http\Controllers\CommonController;
 
 //共通
 Route::get('/about', [CommonController::class, 'about']);
+Route::get('/profile_delete_pre', [CommonController::class, 'profile_delete_pre']);
 Route::fallback(function(){ 
     //存在しないURLは自動的に/notPageにリダイレクトさせる。
     return redirect('/notPage'); 

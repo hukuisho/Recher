@@ -1,0 +1,14 @@
+.delete {
+    background-color: rgb(4, 4, 102);
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 300%;
+    &::before {
+        content: "アカウント削除中";
+        font-size: medium;
+        transition: all 500ms ease-in-out;
+        animation: flash 500ms linear infinite;
+    }
+}

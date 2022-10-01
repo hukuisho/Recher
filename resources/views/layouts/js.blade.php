@@ -6,6 +6,9 @@
     @case("/")
         <script src="{{ asset('/js/guest/index.js') }}"></script>
     @break
+    @case("/profile_delete_pre")
+        <script src="{{ asset('/js/commons/profile_delete_pre.js') }}"></script>
+    @break
     @case("/member")
         <script src="{{ asset('/js/member/top/top.js') }}"></script>
     @break
