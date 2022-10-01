@@ -14,6 +14,14 @@ class CommonController extends Controller
         );
         return view('common/about/about')->with('viewUseArray',$viewUseArray);
     }
+    public function profile_delete_pre() {
+        
+
+        $viewUseArray = array(
+            
+        );
+        return view('common/profile_delete_pre')->with('viewUseArray',$viewUseArray);
+    }
     public function notPage() {
         $warningText = "ページが存在しません";
         $redirectTopPath = "TOPへ戻る";

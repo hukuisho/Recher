@@ -46,7 +46,6 @@ addEventListener("DOMContentLoaded", function () {
 
 
     var getUserDeleteBotton = document.querySelector("#userDelete");
-    var userDeleteAction = document.querySelector("#userDeleteAction");
     getUserDeleteBotton.addEventListener("click", function () {
       var getUserDeleteBottonCreckResult = window.confirm("本当に退会しますか?\r\n失ったデータは二度と復元しません。");
 

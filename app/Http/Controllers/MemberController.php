@@ -33,7 +33,7 @@ class MemberController extends Controller
         $user = Auth::user();
         if (isset($user_form["delete"]) && $user_form["delete"] == "isset"){
             $user->find($user["id"])->delete();
-            return redirect('/');
+            return redirect('/profile_delete_pre');
         }
         try{
             if(!empty($user_form["profile_image"]) &&!empty($user_form["name"]) && !empty($user_form["email"])){

@@ -1,5 +1,5 @@
 @keyframes loading {
-    0% {
+    from {
         opacity: 0;
         text-shadow: 0 0 0 #fff, 0 0 0 #fff;
     }
@@ -7,7 +7,7 @@
         opacity: 1;
         text-shadow: 0 0 10px #fff, 0 0 15px #fff;
     }
-    100% {
+    to {
         opacity: 1;
         text-shadow: 0 0 0 #fff, 0 0 0 #fff;
         transform: scale(1.5);
