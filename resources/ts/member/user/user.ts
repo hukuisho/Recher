@@ -22,9 +22,7 @@ addEventListener("DOMContentLoaded", () => {
         // セレクトボックスの値によって画像を切り替える。
         const changeIcon = document.querySelector("#changeIcon");
         selectIconList!.addEventListener("change", () => {
-            if (Object(selectIconList).value) {
-                changeIcon!.setAttribute("src", Object(selectIconList).value);
-            }
+            changeIcon!.setAttribute("src", Object(selectIconList).value);
         });
         // icon e
         const userEditKeyValue: memberUserKeyValue<string> = {

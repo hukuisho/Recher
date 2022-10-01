@@ -1,1 +1,0 @@
-<div id="seasonAnimation" class="season-animation"></div>

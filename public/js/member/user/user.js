@@ -21,9 +21,7 @@ addEventListener("DOMContentLoaded", function () {
 
     var changeIcon = document.querySelector("#changeIcon");
     selectIconList.addEventListener("change", function () {
-      if (Object(selectIconList).value) {
-        changeIcon.setAttribute("src", Object(selectIconList).value);
-      }
+      changeIcon.setAttribute("src", Object(selectIconList).value);
     }); // icon e
 
     var userEditKeyValue = {
