@@ -30,9 +30,9 @@
         <hr class="user-edit__hr">
         <h5 id="isWarningText" class="user-edit__warning-text"></h5>
     </form>
-    <form class="my_page__logout" action="{{ route('logout') }}" method="post">
+    <form id="userDeleteAction" class="my_page__delete" action="">
         @csrf 
-            <button type="submit">ログアウト</button>
+            <button id="userDelete" type="submit" value="" name="delete">退会する</button>
     </form>
 </div>
 @endsection

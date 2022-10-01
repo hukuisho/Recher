@@ -21,13 +21,16 @@
             margin: 0% 5%;
         }
     }
-    &__logout {
-        width: 85px;
-        margin: 5% auto;
-        & button {
-            padding: 6%;
-            animation: none;
-            background-color: #ffff;
+    $logoutOrDelete: logout, delete;
+    @each $user in $logoutOrDelete {
+        &__#{$user} {
+            width: 85px;
+            margin: 5% auto;
+            & button {
+                padding: 6%;
+                animation: none;
+                background-color: #ffff;
+            }
         }
     }
 }

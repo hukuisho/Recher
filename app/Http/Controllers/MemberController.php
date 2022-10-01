@@ -31,7 +31,10 @@ class MemberController extends Controller
     public function profile_edit(Request $request) {
         $user_form = $request->all();
         $user = Auth::user();
-        
+        if (isset($user_form["delete"]) && $user_form["delete"] == "isset"){
+            $user->find($user["id"])->delete();
+            return redirect('/');
+        }
         try{
             if(!empty($user_form["profile_image"]) &&!empty($user_form["name"]) && !empty($user_form["email"])){
                 // dd($user_form);
@@ -41,6 +44,7 @@ class MemberController extends Controller
                 $user->fill($user_form)->save();
                 return view('member.user.edit'); 
             }
+            
         } catch (Exception $ex) {
             return view('member.user.edit');
         }

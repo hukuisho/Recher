@@ -20,7 +20,7 @@ addEventListener("DOMContentLoaded", function () {
 
 
     var changeIcon = document.querySelector("#changeIcon");
-    selectIconList === null || selectIconList === void 0 ? void 0 : selectIconList.addEventListener("change", function () {
+    selectIconList.addEventListener("change", function () {
       if (Object(selectIconList).value) {
         changeIcon.setAttribute("src", Object(selectIconList).value);
       }
@@ -42,7 +42,20 @@ addEventListener("DOMContentLoaded", function () {
       alert(isFirstAlertText);
     } else {
       isWarningText.innerHTML = visitedTrueText;
-    }
+    } // delete s
+
+
+    var getUserDeleteBotton = document.querySelector("#userDelete");
+    var userDeleteAction = document.querySelector("#userDeleteAction");
+    getUserDeleteBotton.addEventListener("click", function () {
+      var getUserDeleteBottonCreckResult = window.confirm("本当に退会しますか?\r\n失ったデータは二度と復元しません。");
+
+      if (getUserDeleteBottonCreckResult) {
+        getUserDeleteBotton === null || getUserDeleteBotton === void 0 ? void 0 : getUserDeleteBotton.setAttribute("value", "isset");
+      } else {
+        getUserDeleteBotton === null || getUserDeleteBotton === void 0 ? void 0 : getUserDeleteBotton.setAttribute("value", "empty");
+      }
+    }); // delete e
   }
 });
 /******/ })()

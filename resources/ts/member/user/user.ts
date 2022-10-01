@@ -21,7 +21,7 @@ addEventListener("DOMContentLoaded", () => {
         }
         // セレクトボックスの値によって画像を切り替える。
         const changeIcon = document.querySelector("#changeIcon");
-        selectIconList?.addEventListener("change", () => {
+        selectIconList!.addEventListener("change", () => {
             if (Object(selectIconList).value) {
                 changeIcon!.setAttribute("src", Object(selectIconList).value);
             }
@@ -52,5 +52,20 @@ addEventListener("DOMContentLoaded", () => {
         } else {
             isWarningText!.innerHTML = visitedTrueText;
         }
+        // delete s
+        const getUserDeleteBotton = document.querySelector("#userDelete");
+        const userDeleteAction = document.querySelector("#userDeleteAction");
+        getUserDeleteBotton!.addEventListener("click", () => {
+            var getUserDeleteBottonCreckResult = window.confirm(
+                "本当に退会しますか?\r\n失ったデータは二度と復元しません。"
+            );
+
+            if (getUserDeleteBottonCreckResult) {
+                getUserDeleteBotton?.setAttribute("value", "isset");
+            } else {
+                getUserDeleteBotton?.setAttribute("value", "empty");
+            }
+        });
+        // delete e
     }
 });

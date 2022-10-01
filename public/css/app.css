@@ -539,6 +539,16 @@ button {
           animation: none;
   background-color: white;
 }
+.my_page__delete {
+  width: 85px;
+  margin: 5% auto;
+}
+.my_page__delete button {
+  padding: 6%;
+  -webkit-animation: none;
+          animation: none;
+  background-color: white;
+}
 
 .user-edit,
 .user-show {
