@@ -1,13 +1,17 @@
-.months-animation {
-    width: 90%;
-    height: 300px;
-    margin: 5% auto;
-    background-color: white;
-    box-shadow: boxShadowColor(15px, "pattern3");
-    background-size: cover;
-    border: #000 solid 1px;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
+$monthsRepertoire: january, february, march, april, may, june, july, august,
+    september, october, november, december;
+@each $month in $monthsRepertoires {
+    .#{$month}-animation {
+        width: 90%;
+        height: 300px;
+        margin: 5% auto;
+        background-color: white;
+        box-shadow: boxShadowColor(15px, "pattern3");
+        background-size: cover;
+        border: #000 solid 1px;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
 }

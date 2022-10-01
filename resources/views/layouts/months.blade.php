@@ -3,39 +3,39 @@ $month = date('n');
 @endphp
 @switch ($month)
     @case("1")
-        <div id="monthsAnimation" class="months-animation"></div>
+        <div id="januaryAnimation" class="january-animation"></div>
         @break
     @case("2")
-        <div id="monthsAnimation" class="months-animation"></div>
+        <div id="february" class="february-animation"></div>
         @break
     @case("3")
-        <div id="monthsAnimation" class="months-animation"></div>
+        <div id="marchAnimation" class="march-animation"></div>
         @break
     @case("4")
-        <div id="monthsAnimation" class="months-animation"></div>
+        <div id="aprilAnimation" class="april-animation"></div>
         @break
     @case("5")
-        <div id="monthsAnimation" class="months-animation"></div>
+        <div id="mayAnimation" class="may-animation"></div>
         @break
     @case("6")
-        <div id="monthsAnimation" class="months-animation"></div>
+        <div id="juneAnimation" class="june-animation"></div>
         @break
     @case("7")
-        <div id="monthsAnimation" class="months-animation"></div>
+        <div id="julyAnimation" class="july-animation"></div>
         @break
     @case("8")
-        <div id="monthsAnimation" class="months-animation"></div>
+        <div id="augustAnimation" class="august-animation"></div>
         @break
     @case("9")
-        <div id="monthsAnimation" class="months-animation"></div>
+        <div id="septemberAnimation" class="september-animation"></div>
         @break
     @case("10")
-        <div id="monthsAnimation" class="months-animation"></div>
+        <div id="octoberAnimation" class="october-animation"></div>
         @break
     @case("11")
-        <div id="monthsAnimation" class="months-animation"></div>
+        <div id="novemberAnimation" class="november-animation"></div>
         @break
     @case("12")
-        <div id="monthsAnimation" class="months-animation"></div>
+        <div id="decemberAnimation" class="december-animation"></div>
         @break
 @endswitch
