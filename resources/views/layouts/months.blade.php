@@ -6,7 +6,7 @@ $month = date('n');
         <div id="januaryAnimation" class="january-animation"></div>
         @break
     @case("2")
-        <div id="february" class="february-animation"></div>
+        <div id="februaryAnimation" class="february-animation"></div>
         @break
     @case("3")
         <div id="marchAnimation" class="march-animation"></div>
