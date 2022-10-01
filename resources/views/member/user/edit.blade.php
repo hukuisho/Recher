@@ -30,7 +30,7 @@
         <hr class="user-edit__hr">
         <h5 id="isWarningText" class="user-edit__warning-text"></h5>
     </form>
-    <form id="userDeleteAction" class="my_page__delete" action="">
+    <form id="userDeleteAction" class="user-edit__delete" action="">
         @csrf 
             <button id="userDelete" type="submit" value="" name="delete">退会する</button>
     </form>

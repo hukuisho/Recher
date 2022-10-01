@@ -21,18 +21,6 @@
             margin: 0% 5%;
         }
     }
-    $logoutOrDelete: logout, delete;
-    @each $user in $logoutOrDelete {
-        &__#{$user} {
-            width: 85px;
-            margin: 5% auto;
-            & button {
-                padding: 6%;
-                animation: none;
-                background-color: #ffff;
-            }
-        }
-    }
 }
 .user-edit,
 .user-show {
@@ -101,5 +89,17 @@
     &__warning-text {
         color: rgb(181 8 8);
         @include textShadowColor(rgb(181, 148, 87));
+    }
+    $logoutOrDelete: logout, delete;
+    @each $user in $logoutOrDelete {
+        &__#{$user} {
+            width: 85px;
+            margin: 5% auto;
+            & button {
+                padding: 6%;
+                animation: none;
+                background-color: #ffff;
+            }
+        }
     }
 }

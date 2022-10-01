@@ -11,7 +11,7 @@
         <p class="user-show__menu">会員ID</p>
         <p class="user-show__menu__id">{{ Auth::user()->id }}</p>
     </div>
-    <form class="my_page__logout" action="{{ route('logout') }}" method="post">
+    <form class="user-show__logout" action="{{ route('logout') }}" method="post">
             @csrf 
             <button type="submit">ログアウト</button>
     </form>

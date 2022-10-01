@@ -529,26 +529,6 @@ button {
   font-size: 150%;
   margin: 0% 5%;
 }
-.my_page__logout {
-  width: 85px;
-  margin: 5% auto;
-}
-.my_page__logout button {
-  padding: 6%;
-  -webkit-animation: none;
-          animation: none;
-  background-color: white;
-}
-.my_page__delete {
-  width: 85px;
-  margin: 5% auto;
-}
-.my_page__delete button {
-  padding: 6%;
-  -webkit-animation: none;
-          animation: none;
-  background-color: white;
-}
 
 .user-edit,
 .user-show {
@@ -642,6 +622,30 @@ button {
 .user-show__warning-text {
   color: rgb(181, 8, 8);
   text-shadow: rgb(181, 148, 87) 1px 0px 1px, rgb(181, 148, 87) -1px 0px 1px, rgb(181, 148, 87) 0px -1px 1px, rgb(181, 148, 87) -1px 0px 1px, rgb(181, 148, 87) 1px 1px 1px, rgb(181, 148, 87) -1px 1px 1px, rgb(181, 148, 87) 1px -1px 1px, rgb(181, 148, 87) -1px -1px 1px, rgb(181, 148, 87) 1px 1px 1px, rgb(181, 148, 87) -1px 1px 1px;
+}
+.user-edit__logout,
+.user-show__logout {
+  width: 85px;
+  margin: 5% auto;
+}
+.user-edit__logout button,
+.user-show__logout button {
+  padding: 6%;
+  -webkit-animation: none;
+          animation: none;
+  background-color: white;
+}
+.user-edit__delete,
+.user-show__delete {
+  width: 85px;
+  margin: 5% auto;
+}
+.user-edit__delete button,
+.user-show__delete button {
+  padding: 6%;
+  -webkit-animation: none;
+          animation: none;
+  background-color: white;
 }
 
 .search {
