@@ -585,7 +585,7 @@ button {
   outline: 3px solid goldenrod;
   outline-offset: -3px;
   z-index: 1;
-  background-image: linear-gradient(45deg, #0bd, rgba(216, 65, 216, 0.5529411765));
+  background-image: linear-gradient(45deg, rgba(18, 18, 180, 0.9), rgba(216, 65, 216, 0.5529411765));
 }
 .richer__header__navList {
   display: flex;
@@ -917,7 +917,7 @@ button {
 }
 
 .loading {
-  background-image: linear-gradient(45deg, #0bd, rgba(216, 65, 216, 0.5529411765));
+  background-image: linear-gradient(45deg, rgba(18, 18, 180, 0.9), rgba(216, 65, 216, 0.5529411765));
   color: white;
   display: flex;
   align-items: center;

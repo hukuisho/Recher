@@ -22,7 +22,7 @@
 @import "member/renraku/renraku";
 
 .loading {
-    background-image: gradientColor(45deg, #0bd, #d841d88d);
+    background-image: gradientColor(45deg, rgb(18 18 180 / 90%), #d841d88d);
     color: #ffff;
     display: flex;
     align-items: center;
