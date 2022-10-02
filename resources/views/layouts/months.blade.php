@@ -37,7 +37,6 @@ $month = date('n');
         @break
     @case("10")
         <div id="octoberAnimation" class="october-animation"></div>
-
         @break
     @case("11")
         <div id="novemberAnimation" class="november-animation"></div>
