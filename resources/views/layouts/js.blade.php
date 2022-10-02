@@ -1,3 +1,6 @@
+@php
+$month = date('n');
+@endphp
 @unless ($_SERVER['REQUEST_URI'] == "/")
     <script src="{{ asset('/js/commons/header.js') }}"></script>
     <script src="{{ asset('/js/commons/footer.js') }}"></script>
@@ -11,6 +14,11 @@
     @break
     @case("/member")
         <script src="{{ asset('/js/member/top/top.js') }}"></script>
+        @switch ($month)
+            @case("2")
+            <script src="{{ asset('/js/commons/months/february.js') }}"></script>
+            @break
+        @endswitch
     @break
     @case ("/member/search")
         <script src="{{ asset('/js/member/search/search.js') }}"></script>

@@ -2,6 +2,7 @@
     "/js/app.js": "/js/app.js",
     "/js/commons/header.js": "/js/commons/header.js",
     "/js/commons/footer.js": "/js/commons/footer.js",
+    "/js/commons/months/february.js": "/js/commons/months/february.js",
     "/js/commons/profile_delete_pre.js": "/js/commons/profile_delete_pre.js",
     "/js/guest/index.js": "/js/guest/index.js",
     "/js/member/user/user.js": "/js/member/user/user.js",

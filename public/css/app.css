@@ -115,22 +115,6 @@
     width: 0;
   }
 }
-@-webkit-keyframes diagonal-move-anim {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translate(-250px, 250px);
-  }
-}
-@keyframes diagonal-move-anim {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translate(-250px, 250px);
-  }
-}
 @-webkit-keyframes flash {
   from {
     opacity: 1;
@@ -151,6 +135,22 @@
   }
   to {
     opacity: 1;
+  }
+}
+@-webkit-keyframes februaryAnim {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-250px, 250px);
+  }
+}
+@keyframes februaryAnim {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-250px, 250px);
   }
 }
 .notPage {
@@ -194,6 +194,59 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+.february-animation__bg {
+  height: 100%;
+  background-size: contain;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+.february-animation__bg.show {
+  opacity: 1;
+  z-index: 2;
+}
+.february-animation__onikitiImg {
+  position: absolute;
+  width: 45%;
+  top: 44%;
+  left: 27%;
+  opacity: 0;
+  transition: all 1000ms ease-in-out;
+}
+.february-animation__onikitiImg.show {
+  opacity: 1;
+}
+.february-animation__text {
+  position: absolute;
+  width: 50%;
+  left: 27%;
+  top: 35%;
+}
+.february-animation__text.show {
+  z-index: 2;
+  top: 35%;
+  left: 17%;
+  width: 70%;
+}
+.february-animation__mamemakiImg {
+  position: absolute;
+  width: 50%;
+  right: 2%;
+  opacity: 0;
+}
+.february-animation__mamemakiImg.show {
+  opacity: 1;
+  -webkit-animation: februaryAnim 3s linear infinite alternate;
+          animation: februaryAnim 3s linear infinite alternate;
+}
+.february-animation__loveImg {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: all 1000ms ease-in-out;
+}
+.february-animation__loveImg.show {
+  opacity: 0.8;
 }
 
 .march-animation {
@@ -884,7 +937,7 @@ button {
 }
 .richer__container {
   min-height: 100vh;
-  background-image: url(/images/apl_main_bg.jpg?f0583fb9dd4addbd0565a269873db607);
+  background-image: url(/images/apl_main_bg.jpg);
   background-size: cover;
 }
 .richer__container__space {
