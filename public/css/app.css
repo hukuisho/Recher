@@ -937,7 +937,7 @@ button {
 }
 .richer__container {
   min-height: 100vh;
-  background-image: url(/images/apl_main_bg.jpg);
+  background-color: rgba(30, 47, 103, 0.78);
   background-size: cover;
 }
 .richer__container__space {
