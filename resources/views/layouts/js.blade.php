@@ -16,7 +16,7 @@ $month = date('n');
         <script src="{{ asset('/js/member/top/top.js') }}"></script>
         @switch ($month)
             @case("2")
-            <script src="{{ asset('/js/commons/months/february.js') }}"></script>
+                <script src="{{ asset('/js/commons/months/february.js') }}"></script>
             @break
         @endswitch
     @break
