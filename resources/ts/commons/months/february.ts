@@ -84,7 +84,7 @@ const februaryAnimation = () => {
             "<br>" + "<a href='/member'>" + "もう一度見る" + "</a>";
         Object(februaryAnimationText).setAttribute(
             "style",
-            "color: #795548; text-decoration: underline 2px;"
+            "text-decoration: underline 2px;"
         );
     }, time);
 };
