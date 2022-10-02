@@ -84,7 +84,7 @@ var februaryAnimation = function februaryAnimation() {
   time += 3000;
   setTimeout(function () {
     Object(februaryAnimationText).innerHTML = "<br>" + "<a href='/member'>" + "もう一度見る" + "</a>";
-    Object(februaryAnimationText).setAttribute("style", "color: #795548; text-decoration: underline 2px;");
+    Object(februaryAnimationText).setAttribute("style", "text-decoration: underline 2px;");
   }, time);
 };
 

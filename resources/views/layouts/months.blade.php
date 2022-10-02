@@ -3,7 +3,13 @@ $month = date('n');
 @endphp
 @switch ($month)
     @case("1")
-        <div id="januaryAnimation" class="january-animation"></div>
+        <div id="januaryAnimation" class="january-animation">
+            <img src="/images/january/oinori.png" id="januaryAnimationOinori" class="january-animation__oinori" alt="お祈り">
+            <h3 id="januaryAnimationText" class="january-animation__text"></h3>
+            <img src="/images/january/hagoita.jpg" id="januaryAnimationHagoita1"class="january-animation__hagoita1" alt="羽子板">
+            <img src="/images/january/hagoita.jpg" id="januaryAnimationHagoita2" class="january-animation__hagoita2" alt="羽子板">
+            <img src="/images/january/hane.jpg" id="januaryAnimationHane" class="january-animation__hane" alt="羽">
+        </div>
         @break
     @case("2")
         <div id="februaryAnimation" class="february-animation">
@@ -36,7 +42,7 @@ $month = date('n');
         <div id="septemberAnimation" class="september-animation"></div>
         @break
     @case("10")
-        <div id="octoberAnimation" class="october-animation"></div>
+        <div id="octoberAnimation" class="september-animation"></div>
         @break
     @case("11")
         <div id="novemberAnimation" class="november-animation"></div>

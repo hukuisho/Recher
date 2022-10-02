@@ -2,6 +2,8 @@ const mix = require("laravel-mix");
 mix.ts("resources/ts/app.ts", "public/js");
 mix.ts("resources/ts/commons/header.ts", "public/js/commons/");
 mix.ts("resources/ts/commons/footer.ts", "public/js/commons/");
+mix.ts("resources/ts/commons/about.ts", "public/js/commons/");
+mix.ts("resources/ts/commons/months/january.ts", "public/js/commons/months/");
 mix.ts("resources/ts/commons/months/february.ts", "public/js/commons/months/");
 mix.ts("resources/ts/commons/profile_delete_pre.ts", "public/js/commons/");
 mix.ts("resources/ts/guest/index.ts", "public/js/guest/");

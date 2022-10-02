@@ -137,6 +137,64 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes januaryHanetsukiAnim {
+  from {
+    transform: rotate(280deg);
+    top: 49%;
+    left: 71%;
+    width: 10%;
+  }
+  25% {
+    transform: rotate(80deg);
+    top: 35%;
+    left: 50%;
+  }
+  50% {
+    transform: rotate(5deg);
+    top: 48%;
+    left: 20%;
+  }
+  75% {
+    transform: rotate(210deg);
+    top: 40%;
+    left: 40%;
+  }
+  to {
+    transform: rotate(265deg);
+    top: 49%;
+    left: 71%;
+    width: 10%;
+  }
+}
+@keyframes januaryHanetsukiAnim {
+  from {
+    transform: rotate(280deg);
+    top: 49%;
+    left: 71%;
+    width: 10%;
+  }
+  25% {
+    transform: rotate(80deg);
+    top: 35%;
+    left: 50%;
+  }
+  50% {
+    transform: rotate(5deg);
+    top: 48%;
+    left: 20%;
+  }
+  75% {
+    transform: rotate(210deg);
+    top: 40%;
+    left: 40%;
+  }
+  to {
+    transform: rotate(265deg);
+    top: 49%;
+    left: 71%;
+    width: 10%;
+  }
+}
 @-webkit-keyframes februaryAnim {
   from {
     transform: translate(0, 0);
@@ -180,6 +238,55 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+.january-animation__text {
+  position: absolute;
+  top: 15%;
+  transition: 1000ms all ease-in-out;
+}
+.january-animation__hagoita1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 40%;
+  transition: 1000ms all ease-in-out;
+}
+.january-animation__hagoita1.show {
+  display: none;
+}
+.january-animation__hagoita2 {
+  position: absolute;
+  transform: scale(-1, 1);
+  top: 50%;
+  left: 60%;
+  width: 40%;
+  transition: 1000ms all ease-in-out;
+}
+.january-animation__hagoita2.show {
+  display: none;
+}
+.january-animation__hane {
+  position: absolute;
+  transform: rotate(280deg);
+  top: 49%;
+  left: 71%;
+  width: 10%;
+  transition: 1000ms all ease-in-out;
+  -webkit-animation: januaryHanetsukiAnim 3s linear infinite;
+          animation: januaryHanetsukiAnim 3s linear infinite;
+}
+.january-animation__hane.show {
+  display: none;
+}
+.january-animation__oinori {
+  display: none;
+  transition: 1000ms all ease-in-out;
+}
+.january-animation__oinori.show {
+  display: block;
+  position: absolute;
+  top: 10%;
+  transform: scale(0.8);
 }
 
 .february-animation {

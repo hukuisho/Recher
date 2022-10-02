@@ -13,6 +13,56 @@ $monthsRepertoire: january, february, march, april, may, june, july, august,
         text-align: center;
         position: relative;
         overflow: hidden;
+        @if ($month == january) {
+            &__text {
+                position: absolute;
+                top: 15%;
+                transition: 1000ms all ease-in-out;
+            }
+            &__hagoita1 {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 40%;
+                transition: 1000ms all ease-in-out;
+                &.show {
+                    display: none;
+                }
+            }
+            &__hagoita2 {
+                position: absolute;
+                transform: scale(-1, 1);
+                top: 50%;
+                left: 60%;
+                width: 40%;
+                transition: 1000ms all ease-in-out;
+                &.show {
+                    display: none;
+                }
+            }
+            &__hane {
+                position: absolute;
+                transform: rotate(280deg);
+                top: 49%;
+                left: 71%;
+                width: 10%;
+                transition: 1000ms all ease-in-out;
+                animation: januaryHanetsukiAnim 3s linear infinite;
+                &.show {
+                    display: none;
+                }
+            }
+            &__oinori {
+                display: none;
+                transition: 1000ms all ease-in-out;
+                &.show {
+                    display: block;
+                    position: absolute;
+                    top: 10%;
+                    transform: scale(0.8);
+                }
+            }
+        }
         @if ($month == february) {
             &__bg {
                 height: 100%;
