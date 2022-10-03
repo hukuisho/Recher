@@ -228,7 +228,6 @@
 
 .january-animation {
   width: 90%;
-  height: 300px;
   margin: 5% auto;
   background-color: white;
   box-shadow: 0px 0px 15px;
@@ -238,6 +237,16 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 450px) and (min-width: 0px) {
+  .january-animation {
+    height: 300px;
+  }
+}
+@media (max-width: 2000px) and (min-width: 450px) {
+  .january-animation {
+    height: 1000px;
+  }
 }
 .january-animation__text {
   position: absolute;
@@ -291,7 +300,6 @@
 
 .february-animation {
   width: 90%;
-  height: 300px;
   margin: 5% auto;
   background-color: white;
   box-shadow: 0px 0px 15px;
@@ -301,6 +309,16 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 450px) and (min-width: 0px) {
+  .february-animation {
+    height: 300px;
+  }
+}
+@media (max-width: 2000px) and (min-width: 450px) {
+  .february-animation {
+    height: 1000px;
+  }
 }
 .february-animation__bg {
   height: 100%;
@@ -358,7 +376,6 @@
 
 .march-animation {
   width: 90%;
-  height: 300px;
   margin: 5% auto;
   background-color: white;
   box-shadow: 0px 0px 15px;
@@ -368,11 +385,20 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 450px) and (min-width: 0px) {
+  .march-animation {
+    height: 300px;
+  }
+}
+@media (max-width: 2000px) and (min-width: 450px) {
+  .march-animation {
+    height: 1000px;
+  }
 }
 
 .april-animation {
   width: 90%;
-  height: 300px;
   margin: 5% auto;
   background-color: white;
   box-shadow: 0px 0px 15px;
@@ -382,11 +408,20 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 450px) and (min-width: 0px) {
+  .april-animation {
+    height: 300px;
+  }
+}
+@media (max-width: 2000px) and (min-width: 450px) {
+  .april-animation {
+    height: 1000px;
+  }
 }
 
 .may-animation {
   width: 90%;
-  height: 300px;
   margin: 5% auto;
   background-color: white;
   box-shadow: 0px 0px 15px;
@@ -396,11 +431,20 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 450px) and (min-width: 0px) {
+  .may-animation {
+    height: 300px;
+  }
+}
+@media (max-width: 2000px) and (min-width: 450px) {
+  .may-animation {
+    height: 1000px;
+  }
 }
 
 .june-animation {
   width: 90%;
-  height: 300px;
   margin: 5% auto;
   background-color: white;
   box-shadow: 0px 0px 15px;
@@ -410,11 +454,20 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 450px) and (min-width: 0px) {
+  .june-animation {
+    height: 300px;
+  }
+}
+@media (max-width: 2000px) and (min-width: 450px) {
+  .june-animation {
+    height: 1000px;
+  }
 }
 
 .july-animation {
   width: 90%;
-  height: 300px;
   margin: 5% auto;
   background-color: white;
   box-shadow: 0px 0px 15px;
@@ -424,11 +477,20 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 450px) and (min-width: 0px) {
+  .july-animation {
+    height: 300px;
+  }
+}
+@media (max-width: 2000px) and (min-width: 450px) {
+  .july-animation {
+    height: 1000px;
+  }
 }
 
 .august-animation {
   width: 90%;
-  height: 300px;
   margin: 5% auto;
   background-color: white;
   box-shadow: 0px 0px 15px;
@@ -438,11 +500,20 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 450px) and (min-width: 0px) {
+  .august-animation {
+    height: 300px;
+  }
+}
+@media (max-width: 2000px) and (min-width: 450px) {
+  .august-animation {
+    height: 1000px;
+  }
 }
 
 .september-animation {
   width: 90%;
-  height: 300px;
   margin: 5% auto;
   background-color: white;
   box-shadow: 0px 0px 15px;
@@ -452,11 +523,20 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 450px) and (min-width: 0px) {
+  .september-animation {
+    height: 300px;
+  }
+}
+@media (max-width: 2000px) and (min-width: 450px) {
+  .september-animation {
+    height: 1000px;
+  }
 }
 
 .october-animation {
   width: 90%;
-  height: 300px;
   margin: 5% auto;
   background-color: white;
   box-shadow: 0px 0px 15px;
@@ -466,11 +546,20 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 450px) and (min-width: 0px) {
+  .october-animation {
+    height: 300px;
+  }
+}
+@media (max-width: 2000px) and (min-width: 450px) {
+  .october-animation {
+    height: 1000px;
+  }
 }
 
 .november-animation {
   width: 90%;
-  height: 300px;
   margin: 5% auto;
   background-color: white;
   box-shadow: 0px 0px 15px;
@@ -481,10 +570,19 @@
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 450px) and (min-width: 0px) {
+  .november-animation {
+    height: 300px;
+  }
+}
+@media (max-width: 2000px) and (min-width: 450px) {
+  .november-animation {
+    height: 1000px;
+  }
+}
 
 .december-animation {
   width: 90%;
-  height: 300px;
   margin: 5% auto;
   background-color: white;
   box-shadow: 0px 0px 15px;
@@ -494,6 +592,16 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 450px) and (min-width: 0px) {
+  .december-animation {
+    height: 300px;
+  }
+}
+@media (max-width: 2000px) and (min-width: 450px) {
+  .december-animation {
+    height: 1000px;
+  }
 }
 
 .delete {

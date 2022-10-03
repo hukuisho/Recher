@@ -3,7 +3,12 @@ $monthsRepertoire: january, february, march, april, may, june, july, august,
 @each $month in $monthsRepertoire {
     .#{$month}-animation {
         width: 90%;
-        height: 300px;
+        @media (max-width: 450px) and (min-width: 0px) {
+            height: 300px;
+        }
+        @media (max-width: 2000px) and (min-width: 450px) {
+            height: 1000px;
+        }
         margin: 5% auto;
         background-color: white;
         box-shadow: boxShadowColor(15px, "pattern3");
