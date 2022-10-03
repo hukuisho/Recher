@@ -1,4 +1,5 @@
 const januaryAnimation = () => {
+    const januaryAnimation = document.querySelector("#januaryAnimation");
     const januaryAnimationText = document.querySelector(
         "#januaryAnimationText"
     );
@@ -32,6 +33,7 @@ const januaryAnimation = () => {
         januaryAnimationHane!.classList.add("show");
         Object(januaryAnimationText).innerHTML =
             "<br>" +
+            "<br>" +
             "あなたにとって" +
             "<br>" +
             "幸せな出来事が" +
@@ -48,6 +50,10 @@ const januaryAnimation = () => {
         Object(januaryAnimationText).setAttribute(
             "style",
             "text-decoration: underline 2px;"
+        );
+        Object(januaryAnimation).setAttribute(
+            "style",
+            "background-color: rgb(230 153 9);"
         );
     }, time);
     time += 1500;

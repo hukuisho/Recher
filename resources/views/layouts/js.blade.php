@@ -8,10 +8,10 @@ $month = date('n');
 @switch ($_SERVER['REQUEST_URI'])
     @case("/")
         <script src="{{ asset('/js/guest/index.js') }}"></script>
-    @break
+        @break
     @case("/about")
-    <script src="{{ asset('/js/commons/about.js') }}"></script>
-    @switch ($month)
+        <script src="{{ asset('/js/commons/about.js') }}"></script>
+        @switch ($month)
             @case("1")    
                 <script src="{{ asset('/js/commons/months/january.js') }}"></script>
                 @break
@@ -20,13 +20,17 @@ $month = date('n');
                 @break
         @endswitch
     @break
+    @case("/preview");
+        <script src="{{ asset('/js/commons/months/january.js') }}"></script>
+        <script src="{{ asset('/js/commons/months/february.js') }}"></script>
+        @break
     @case("/profile_delete_pre")
         <script src="{{ asset('/js/commons/profile_delete_pre.js') }}"></script>
     @break
     @case("/member")
         <script src="{{ asset('/js/member/top/top.js') }}"></script>
         @switch ($month)
-            @case("10")
+            @case("1")
                 <script src="{{ asset('/js/commons/months/january.js') }}"></script>
             @break
             @case("2")
