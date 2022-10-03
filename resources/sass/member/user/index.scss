@@ -11,6 +11,7 @@
     &__userName {
         color: #ffff;
         margin: 2% auto;
+        overflow-wrap: break-word;
     }
     $userMyLinkLists: relationship-link, edit-link, show-link;
     @each $user in $userMyLinkLists {
@@ -51,6 +52,7 @@
                 margin: 3% 0%;
                 font-size: 130%;
                 color: #ffff;
+                overflow-wrap: break-word;
             }
         }
     }

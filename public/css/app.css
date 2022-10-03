@@ -602,7 +602,7 @@
 }
 
 .auth-link {
-  color: blueviolet;
+  color: rgb(230, 153, 9);
   text-decoration: underline;
   transition: all 1000ms ease-in-out;
   -webkit-animation: flash 2s linear infinite;
@@ -839,6 +839,7 @@ button {
 .my_page__userName {
   color: white;
   margin: 2% auto;
+  overflow-wrap: break-word;
 }
 .my_page__relationship-link {
   color: goldenrod;
@@ -900,18 +901,21 @@ button {
   margin: 3% 0%;
   font-size: 130%;
   color: white;
+  overflow-wrap: break-word;
 }
 .user-edit__menu__email,
 .user-show__menu__email {
   margin: 3% 0%;
   font-size: 130%;
   color: white;
+  overflow-wrap: break-word;
 }
 .user-edit__menu__id,
 .user-show__menu__id {
   margin: 3% 0%;
   font-size: 130%;
   color: white;
+  overflow-wrap: break-word;
 }
 .user-edit__select-icon-list,
 .user-show__select-icon-list {
