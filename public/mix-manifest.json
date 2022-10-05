@@ -5,6 +5,7 @@
     "/js/commons/about.js": "/js/commons/about.js",
     "/js/commons/months/january.js": "/js/commons/months/january.js",
     "/js/commons/months/february.js": "/js/commons/months/february.js",
+    "/js/commons/months/march.js": "/js/commons/months/march.js",
     "/js/commons/profile_delete_pre.js": "/js/commons/profile_delete_pre.js",
     "/js/guest/index.js": "/js/guest/index.js",
     "/js/member/user/user.js": "/js/member/user/user.js",

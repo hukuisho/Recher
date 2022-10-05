@@ -18,11 +18,15 @@ $month = date('n');
             @case("2")
                 <script src="{{ asset('/js/commons/months/february.js') }}"></script>
                 @break
+            @case("3")
+            <script src="{{ asset('/js/commons/months/march.js') }}"></script>
+                @break
         @endswitch
     @break
-    @case("/preview");
+    @case("/preview")
         <script src="{{ asset('/js/commons/months/january.js') }}"></script>
         <script src="{{ asset('/js/commons/months/february.js') }}"></script>
+        <script src="{{ asset('/js/commons/months/march.js') }}"></script>
         @break
     @case("/profile_delete_pre")
         <script src="{{ asset('/js/commons/profile_delete_pre.js') }}"></script>
@@ -35,6 +39,9 @@ $month = date('n');
             @break
             @case("2")
                 <script src="{{ asset('/js/commons/months/february.js') }}"></script>
+            @break
+            @case("3")
+            <script src="{{ asset('/js/commons/months/march.js') }}"></script>
             @break
         @endswitch
     @break

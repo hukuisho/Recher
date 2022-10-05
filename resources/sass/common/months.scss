@@ -73,7 +73,7 @@ $monthsRepertoire: january, february, march, april, may, june, july, august,
                 height: 100%;
                 background-size: contain;
                 opacity: 0;
-                transition: all 500ms ease-in-out;
+                transition: all 1000ms ease-in-out;
                 &.show {
                     opacity: 1;
                     z-index: 2;
@@ -119,6 +119,60 @@ $monthsRepertoire: january, february, march, april, may, june, july, august,
                 transition: all 1000ms ease-in-out;
                 &.show {
                     opacity: 0.8;
+                }
+            }
+        }
+        @if ($month == march) {
+            &__text {
+                position: absolute;
+                opacity: 0;
+                top: 10%;
+                transition: 1000ms all ease-in-out;
+                &.show {
+                    opacity: 1;
+                }
+            }
+            &__march_bg {
+                position: absolute;
+                height: 100%;
+                top: 0%;
+                left: 0;
+                transition: 1000 all ease-in-out;
+                &.show {
+                    opacity: 0.3;
+                }
+            }
+            &__hinamatsuri {
+                position: absolute;
+                opacity: 0;
+                top: 2%;
+                left: 100%;
+                transition: 1000ms all ease-in-out;
+                &.show {
+                    left: 0;
+                    opacity: 1;
+                }
+            }
+            &__sotugyousyousyo {
+                position: absolute;
+                opacity: 0;
+                bottom: -5%;
+                right: 100%;
+                transition: 1000ms all ease-in-out;
+                &.show {
+                    right: 0%;
+                    opacity: 1;
+                }
+            }
+            &__whiteday {
+                position: absolute;
+                opacity: 0;
+                top: 5%;
+                left: 100%;
+                transition: 1000ms all ease-in-out;
+                &.show {
+                    left: 0%;
+                    opacity: 1;
                 }
             }
         }
