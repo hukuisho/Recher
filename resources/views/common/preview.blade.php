@@ -14,7 +14,14 @@
     <img src="/images/february/bg.jpg" id="februaryAnimationBg" class="february-animation__bg"></img>
     <img src="/images/february/love.jpg" id="loveImg" class="february-animation__loveImg"></img>
 </div>
-<div id="marchAnimation" class="march-animation"></div>
+<div id="marchAnimation" class="march-animation">
+    <img src="/images/march/march_bg.png" id="marchBg" class="march-animation__march_bg"></img>
+    <img src="/images/march/hinamatsuri.png" id="hinamatsuri" class="march-animation__hinamatsuri"></img>
+    <img src="/images/march/sotugyousyousyo.png" id="sotugyousyousyo" class="march-animation__sotugyousyousyo"></img>
+    <img src="/images/march/whiteday.png" id="whiteday" class="march-animation__whiteday"></img>
+    <h3 id="marchAnimationText" class="march-animation__text"></h3>
+
+</div>
 <div id="aprilAnimation" class="april-animation"></div>
 <div id="mayAnimation" class="may-animation"></div>
 <div id="juneAnimation" class="june-animation"></div>

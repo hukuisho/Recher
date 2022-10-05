@@ -5,6 +5,7 @@ mix.ts("resources/ts/commons/footer.ts", "public/js/commons/");
 mix.ts("resources/ts/commons/about.ts", "public/js/commons/");
 mix.ts("resources/ts/commons/months/january.ts", "public/js/commons/months/");
 mix.ts("resources/ts/commons/months/february.ts", "public/js/commons/months/");
+mix.ts("resources/ts/commons/months/march.ts", "public/js/commons/months/");
 mix.ts("resources/ts/commons/profile_delete_pre.ts", "public/js/commons/");
 mix.ts("resources/ts/guest/index.ts", "public/js/guest/");
 mix.ts("resources/ts/member/user/user.ts", "public/js/member/user/");

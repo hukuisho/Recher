@@ -324,7 +324,7 @@
   height: 100%;
   background-size: contain;
   opacity: 0;
-  transition: all 500ms ease-in-out;
+  transition: all 1000ms ease-in-out;
 }
 .february-animation__bg.show {
   opacity: 1;
@@ -395,6 +395,58 @@
   .march-animation {
     height: 1000px;
   }
+}
+.march-animation__text {
+  position: absolute;
+  opacity: 0;
+  top: 10%;
+  transition: 1000ms all ease-in-out;
+}
+.march-animation__text.show {
+  opacity: 1;
+}
+.march-animation__march_bg {
+  position: absolute;
+  height: 100%;
+  top: 0%;
+  left: 0;
+  transition: 1000 all ease-in-out;
+}
+.march-animation__march_bg.show {
+  opacity: 0.3;
+}
+.march-animation__hinamatsuri {
+  position: absolute;
+  opacity: 0;
+  top: 2%;
+  left: 100%;
+  transition: 1000ms all ease-in-out;
+}
+.march-animation__hinamatsuri.show {
+  left: 0;
+  opacity: 1;
+}
+.march-animation__sotugyousyousyo {
+  position: absolute;
+  opacity: 0;
+  bottom: -5%;
+  right: 100%;
+  transition: 1000ms all ease-in-out;
+}
+.march-animation__sotugyousyousyo.show {
+  right: 0%;
+  opacity: 1;
+}
+.march-animation__whiteday {
+  position: absolute;
+  opacity: 0;
+  top: 5%;
+  left: 100%;
+  transition: 1000ms all ease-in-out;
+}
+.march-animation__whiteday.show {
+  left: 0%;
+  opacity: 1;
 }
 
 .april-animation {
