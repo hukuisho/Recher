@@ -55,7 +55,7 @@ $month = date('n');
     @if(strpos($_SERVER['REQUEST_URI'],'user') == true)
         <script src="{{ asset('/js/member/user/user.js') }}"></script>
         @break
-        @else 
+    @else 
             <script src="{{ asset('/js/member/user/user.js') }}"></script>
         @break
     @endif

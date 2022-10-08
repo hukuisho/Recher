@@ -1183,7 +1183,7 @@ button {
   background-color: rgba(128, 128, 128, 0.7607843137);
 }
 .search__explanation-text {
-  margin: 1% auto 2%;
+  margin: 5% auto;
   width: 80%;
   text-decoration: underline;
 }
