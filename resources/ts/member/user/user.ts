@@ -53,15 +53,11 @@ addEventListener("DOMContentLoaded", () => {
         // delete s
         const getUserDeleteBotton = document.querySelector("#userDelete");
         getUserDeleteBotton!.addEventListener("click", () => {
-            var getUserDeleteBottonCreckResult = window.confirm(
+            const getUserDeleteResult = window.confirm(
                 "本当に退会しますか?\r\n失ったデータは二度と復元しません。"
             );
-
-            if (getUserDeleteBottonCreckResult) {
-                getUserDeleteBotton?.setAttribute("value", "isset");
-            } else {
-                getUserDeleteBotton?.setAttribute("value", "empty");
-            }
+            const withdrawalValue = getUserDeleteResult ? "isset" : "empty";
+            getUserDeleteBotton?.setAttribute("value", withdrawalValue);
         });
         // delete e
     }

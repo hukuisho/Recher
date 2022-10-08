@@ -1188,6 +1188,48 @@ button {
   text-decoration: underline;
 }
 
+.renraku {
+  width: 100%;
+}
+.renraku__select {
+  display: flex;
+  width: 80%;
+  margin: 15% auto;
+  text-align: center;
+}
+.renraku__select__admin {
+  width: 50%;
+  background-color: rgba(117, 117, 117, 0.7294117647);
+  margin-right: 5%;
+  padding: 5% 0%;
+  color: aliceblue;
+  border: 2px solid black;
+}
+.renraku__select__friend {
+  width: 50%;
+  background-color: rgba(117, 117, 117, 0.7294117647);
+  margin-left: 5%;
+  padding: 5% 0%;
+  color: aliceblue;
+  border: 2px solid black;
+}
+.renraku__explanation {
+  width: 80%;
+  margin: 0% auto;
+  padding: 3%;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.25);
+  overflow-wrap: break-word;
+}
+.renraku__explanation__text {
+  padding: 2% 0%;
+}
+.renraku__explanation__text span {
+  color: goldenrod;
+  -webkit-text-decoration: solid 2px;
+          text-decoration: solid 2px;
+}
+
 .loading {
   background-image: linear-gradient(45deg, rgba(18, 18, 180, 0.9), rgba(216, 65, 216, 0.5529411765));
   color: white;

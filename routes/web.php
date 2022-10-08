@@ -26,7 +26,10 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/member/user/edit/{id}', [MemberController::class, 'profile_edit']);
     Route::get('/member/timeline',        [MemberController::class, 'timeline_index']);
     Route::get('/member/schedule',        [MemberController::class, 'schedule_index']);
-    Route::get('/member/bell',            [MemberController::class, 'bell_index']);
-    Route::get('/member/renraku',         [MemberController::class, 'renraku_index']);
     Route::get('/member/search',          [MemberController::class, 'search']);
+    Route::get('/member/bell',            [MemberController::class, 'bell_index']);
+    //連絡
+    Route::get('/member/renraku',         [MemberController::class, 'renraku_select']);
+    Route::get('/member/renraku/admin',         [MemberController::class, 'renraku_select_admin']);
+    Route::get('/member/renraku/friend',         [MemberController::class, 'renraku_select_friend']);
 });
