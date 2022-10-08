@@ -12,5 +12,6 @@
     "/js/member/timeline/timeline.js": "/js/member/timeline/timeline.js",
     "/js/member/top/top.js": "/js/member/top/top.js",
     "/js/member/search/search.js": "/js/member/search/search.js",
+    "/js/member/renraku/renraku.js": "/js/member/renraku/renraku.js",
     "/css/app.css": "/css/app.css"
 }

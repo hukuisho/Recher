@@ -15,4 +15,5 @@ mix.ts(
 );
 mix.ts("resources/ts/member/top/top.ts", "public/js/member/top/");
 mix.ts("resources/ts/member/search/search.ts", "public/js/member/search/");
+mix.ts("resources/ts/member/renraku/renraku.ts", "public/js/member/renraku/");
 mix.sass("resources/sass/app.scss", "public/css");

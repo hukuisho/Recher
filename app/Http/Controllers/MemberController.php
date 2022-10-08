@@ -71,10 +71,20 @@ class MemberController extends Controller
         );
         return view('member/bell/index')->with('viewUseArray',$viewUseArray);
     }
-    public function renraku_index() {
+    public function renraku_select() {
         $viewUseArray = array(
         );
-        return view('member/bell/index')->with('viewUseArray',$viewUseArray);
+        return view('member/renraku/select')->with('viewUseArray',$viewUseArray);
+    }
+    public function renraku_select_admin() {
+        $viewUseArray = array(
+        );
+        return view('member/renraku/admin/index')->with('viewUseArray',$viewUseArray);
+    }
+    public function renraku_select_friend() {
+        $viewUseArray = array(
+        );
+        return view('member/renraku/friend/index')->with('viewUseArray',$viewUseArray);
     }
 
 }

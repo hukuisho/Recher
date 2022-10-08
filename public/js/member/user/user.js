@@ -45,13 +45,9 @@ addEventListener("DOMContentLoaded", function () {
 
     var getUserDeleteBotton = document.querySelector("#userDelete");
     getUserDeleteBotton.addEventListener("click", function () {
-      var getUserDeleteBottonCreckResult = window.confirm("本当に退会しますか?\r\n失ったデータは二度と復元しません。");
-
-      if (getUserDeleteBottonCreckResult) {
-        getUserDeleteBotton === null || getUserDeleteBotton === void 0 ? void 0 : getUserDeleteBotton.setAttribute("value", "isset");
-      } else {
-        getUserDeleteBotton === null || getUserDeleteBotton === void 0 ? void 0 : getUserDeleteBotton.setAttribute("value", "empty");
-      }
+      var getUserDeleteResult = window.confirm("本当に退会しますか?\r\n失ったデータは二度と復元しません。");
+      var withdrawalValue = getUserDeleteResult ? "isset" : "empty";
+      getUserDeleteBotton === null || getUserDeleteBotton === void 0 ? void 0 : getUserDeleteBotton.setAttribute("value", withdrawalValue);
     }); // delete e
   }
 });

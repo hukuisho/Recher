@@ -1,0 +1,40 @@
+.renraku {
+    width: 100%;
+    &__select {
+        display: flex;
+        width: 80%;
+        margin: 15% auto;
+        text-align: center;
+        &__admin {
+            width: 50%;
+            background-color: #757575ba;
+            margin-right: 5%;
+            padding: 5% 0%;
+            color: aliceblue;
+            border: 2px solid black;
+        }
+        &__friend {
+            width: 50%;
+            background-color: #757575ba;
+            margin-left: 5%;
+            padding: 5% 0%;
+            color: aliceblue;
+            border: 2px solid black;
+        }
+    }
+    &__explanation {
+        width: 80%;
+        margin: 0% auto;
+        padding: 3%;
+        text-align: left;
+        background-color: rgba(255, 255, 255, 0.25);
+        overflow-wrap: break-word;
+        &__text {
+            padding: 2% 0%;
+            & span {
+                color: goldenrod;
+                text-decoration: solid 2px;
+            }
+        }
+    }
+}
