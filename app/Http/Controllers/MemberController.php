@@ -49,6 +49,11 @@ class MemberController extends Controller
             return view('member.user.edit');
         }
     }
+    public function friend_top() {
+        $viewUseArray = array(
+        );
+        return view('member/user/friend/top')->with('viewUseArray',$viewUseArray);
+    }
     public function timeline_index() {
         $viewUseArray = array(
         );
