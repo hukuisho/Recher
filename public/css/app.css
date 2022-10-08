@@ -1151,7 +1151,7 @@ button {
   padding: 3%;
 }
 .search__text {
-  margin-bottom: 4%;
+  margin: 7% 0%;
   color: rgba(0, 0, 0, 0.5294117647);
   font-weight: bold;
 }
@@ -1179,7 +1179,7 @@ button {
 .search hr {
   width: 80%;
   padding: 1px;
-  margin: 0 auto 1%;
+  margin: 0 auto 13%;
   background-color: rgba(128, 128, 128, 0.7607843137);
 }
 .search__explanation-text {

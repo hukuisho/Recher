@@ -8,7 +8,9 @@ use App\Http\Controllers\CommonController;
 
 //共通
 Route::get('/about', [CommonController::class, 'about']);
+//アニメーション確認用
 Route::get('/preview', [CommonController::class, 'preview']);
+//ユーザー退会しているように見せる用
 Route::get('/profile_delete_pre', [CommonController::class, 'profile_delete_pre']);
 Route::fallback(function(){ 
     //存在しないURLは自動的に/notPageにリダイレクトさせる。
