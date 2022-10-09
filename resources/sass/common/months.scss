@@ -176,5 +176,34 @@ $monthsRepertoire: january, february, march, april, may, june, july, august,
                 }
             }
         }
+        //fukui s
+        @if ($month == april) {
+            &__text {
+                position: absolute;
+                opacity: 0;
+                top: 10%;
+                transition: 1000ms all ease-in-out;
+                &.show {
+                    opacity: 1;
+                }
+            }
+            &__sakura {
+                position: absolute;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &.show {
+                    display: none;
+                }
+                & li {
+                    @include sakuraEffect;
+                }
+            }
+        }
+        //fukui e
     }
 }

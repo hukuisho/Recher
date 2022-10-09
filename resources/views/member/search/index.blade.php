@@ -1,9 +1,10 @@
 @extends('layouts.layouts')
 @section('content')
-    <form method="get" class="search" action="http://www.google.co.jp/search">
+    <form method="get" id="searchFormAction" class="search" action="">
         <p class="search__text">{{$viewUseArray["text"]}}</p>
         <input
             type="tel"
+            id="searchWord"
             class="search__word"
             name="q"
             placeholder="検索ワードを入力してください。"
@@ -13,7 +14,7 @@
         <input
             type="submit"
             name="btng"
-            id="isSearchInput"
+            id="searchInput"
             style="background-color: goldenrod;"
             class="search__Word__input"
             value="検索"
