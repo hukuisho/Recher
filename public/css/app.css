@@ -211,6 +211,48 @@
     transform: translate(-250px, 250px);
   }
 }
+@-webkit-keyframes fall {
+  to {
+    top: 120%;
+  }
+}
+@keyframes fall {
+  to {
+    top: 120%;
+  }
+}
+@-webkit-keyframes sway1 {
+  from {
+    transform: translateX(0px) rotate(0deg);
+  }
+  to {
+    transform: translateX(200px) rotate(-45deg);
+  }
+}
+@keyframes sway1 {
+  from {
+    transform: translateX(0px) rotate(0deg);
+  }
+  to {
+    transform: translateX(200px) rotate(-45deg);
+  }
+}
+@-webkit-keyframes sway2 {
+  from {
+    transform: translateX(200px) rotate(-45deg);
+  }
+  to {
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+@keyframes sway2 {
+  from {
+    transform: translateX(200px) rotate(-45deg);
+  }
+  to {
+    transform: translateX(0px) rotate(0deg);
+  }
+}
 .notPage {
   width: 80%;
   margin: 0 auto;
@@ -470,6 +512,118 @@
   .april-animation {
     height: 1000px;
   }
+}
+.april-animation__text {
+  position: absolute;
+  opacity: 0;
+  top: 10%;
+  transition: 1000ms all ease-in-out;
+}
+.april-animation__text.show {
+  opacity: 1;
+}
+.april-animation__sakura {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.april-animation__sakura.show {
+  display: none;
+}
+.april-animation__sakura li {
+  position: absolute;
+  list-style: none;
+  top: -20%;
+  background: #ffdbed;
+  border-radius: 0% 70%;
+  -webkit-animation: fall 4s liner infinite, sway 2s ease-in-out infinite alternate;
+          animation: fall 4s liner infinite, sway 2s ease-in-out infinite alternate;
+}
+.april-animation__sakura li:nth-child(1) {
+  left: 0%;
+  width: 24px;
+  height: 15px;
+  -webkit-animation: fall 10s Linear infinite, sway1 3s ease-in-out infinite alternate;
+          animation: fall 10s Linear infinite, sway1 3s ease-in-out infinite alternate;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.april-animation__sakura li:nth-child(2) {
+  left: 5%;
+  width: 13px;
+  height: 9px;
+  -webkit-animation: fall 15s linear infinite, sway1 2s ease-in-out infinite alternate;
+          animation: fall 15s linear infinite, sway1 2s ease-in-out infinite alternate;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+.april-animation__sakura li:nth-child(3) {
+  left: 15%;
+  width: 16px;
+  height: 10px;
+  -webkit-animation: fall 9s linear infinite, sway1 3.5s ease-in-out infinite alternate;
+          animation: fall 9s linear infinite, sway1 3.5s ease-in-out infinite alternate;
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+}
+.april-animation__sakura li:nth-child(4) {
+  left: 30%;
+  width: 16px;
+  height: 10px;
+  -webkit-animation: fall 8s linear infinite, sway2 4s ease-in-out infinite alternate;
+          animation: fall 8s linear infinite, sway2 4s ease-in-out infinite alternate;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+.april-animation__sakura li:nth-child(5) {
+  left: 40%;
+  width: 16px;
+  height: 10px;
+  -webkit-animation: fall 10s linear infinite, sway1 4s ease-in-out infinite alternate;
+          animation: fall 10s linear infinite, sway1 4s ease-in-out infinite alternate;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.april-animation__sakura li:nth-child(6) {
+  left: 55%;
+  width: 24px;
+  height: 15px;
+  -webkit-animation: fall 11s linear infinite, sway2 3s ease-in-out infinite alternate;
+          animation: fall 11s linear infinite, sway2 3s ease-in-out infinite alternate;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.april-animation__sakura li:nth-child(7) {
+  left: 65%;
+  width: 16px;
+  height: 10px;
+  -webkit-animation: fall 7s linear infinite, sway2 3.5s ease-in-out infinite alternate;
+          animation: fall 7s linear infinite, sway2 3.5s ease-in-out infinite alternate;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+.april-animation__sakura li:nth-child(8) {
+  left: 50%;
+  width: 13px;
+  height: 9px;
+  -webkit-animation: fall 7s linear infinite, sway1 3s ease-in-out infinite alternate;
+          animation: fall 7s linear infinite, sway1 3s ease-in-out infinite alternate;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.april-animation__sakura li:nth-child(9) {
+  left: 80%;
+  width: 16px;
+  height: 10px;
+  -webkit-animation: fall 10s linear infinite, sway2 4s ease-in-out infinite alternate;
+          animation: fall 10s linear infinite, sway2 4s ease-in-out infinite alternate;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 .may-animation {
