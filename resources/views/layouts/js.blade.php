@@ -23,11 +23,14 @@ $month = date('n');
                 @break
         @endswitch
     @break
+    <!-- fukui s -->
     @case("/preview")
         <script src="{{ asset('/js/commons/months/january.js') }}"></script>
         <script src="{{ asset('/js/commons/months/february.js') }}"></script>
         <script src="{{ asset('/js/commons/months/march.js') }}"></script>
+        <script src="{{ asset('/js/commons/months/april.js') }}"></script>
         @break
+    <!-- fukui e -->
     @case("/profile_delete_pre")
         <script src="{{ asset('/js/commons/profile_delete_pre.js') }}"></script>
     @break

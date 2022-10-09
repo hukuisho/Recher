@@ -22,7 +22,25 @@
     <h3 id="marchAnimationText" class="march-animation__text"></h3>
 
 </div>
-<div id="aprilAnimation" class="april-animation"></div>
+<!-- fukui -->
+<div id="aprilAnimation" class="april-animation">
+    <ul id="aprilAnimationSakura" class="april-animation__sakura">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <img src="/images/april/NewLife.jpg" id="NewLife" class="april-animation_NewLife"></img>
+    <img src="/images/april/Support.png" id="Support" class="april-animation_Support"></img>
+    <img src="/images/april/LifeImage.png" id="LifeImage" class="april-animation_LifeImage"></img>
+    <p id="aprilAnimationText" class="april-animation__text"></p>
+</div>
+<!-- fukui -->
 <div id="mayAnimation" class="may-animation"></div>
 <div id="juneAnimation" class="june-animation"></div>
 <div id="julyAnimation" class="july-animation"></div>

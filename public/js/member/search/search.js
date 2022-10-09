@@ -7,9 +7,20 @@ var __webpack_exports__ = {};
 
 
 addEventListener("DOMContentLoaded", function () {
-  var isSearchInput = document.querySelector("#isSearchInput");
-  isSearchInput === null || isSearchInput === void 0 ? void 0 : isSearchInput.addEventListener("click", function () {
-    alert("Google検索ページへ移動します。");
+  var searchWord = document.querySelector("#searchWord");
+  var searchInput = document.querySelector("#searchInput");
+  searchInput === null || searchInput === void 0 ? void 0 : searchInput.addEventListener("click", function () {
+    if (!Object(searchWord).value.match(/\S/g)) {
+      var time = 0;
+      alert("適切な検索ワードを入力してください");
+      setTimeout(function () {
+        window.location.href = "/member/search";
+      }, time += 10);
+    } else {
+      var searchFormAction = document.querySelector("#searchFormAction");
+      Object(searchFormAction).setAttribute("action", "http://www.google.co.jp/search");
+      alert("Google検索ページへ移動します。");
+    }
   });
 });
 /******/ })()
