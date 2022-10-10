@@ -7,15 +7,14 @@ use Illuminate\Http\Request;
 class CommonController extends Controller
 {
     public function about() {
-        
-
         $viewUseArray = array(
-            
         );
         return view('common/about/about')->with('viewUseArray',$viewUseArray);
     }
     public function preview() {
-        return view('common/preview');
+        $viewUseArray = array(
+        );
+        return view('common/preview')->with('viewUseArray',$viewUseArray);
     }
     
     public function profile_delete_pre() {
