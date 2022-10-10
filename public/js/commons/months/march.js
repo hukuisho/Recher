@@ -38,7 +38,7 @@ var marchAnimation = function marchAnimation() {
   }, time += 1500);
   setTimeout(function () {
     marchBg.classList.remove("show");
-    Object(marchAnimationText).innerHTML = "<br>" + "<br>" + "<br>" + "様々な" + "<br>" + "別れや" + "旅立ち";
+    Object(marchAnimationText).innerHTML = "<br>" + "<br>" + "<br>" + "様々な" + "<br>" + "旅立ちや";
   }, time += 1000);
   setTimeout(function () {
     Object(marchAnimationText).innerHTML = "<br>" + "<br>" + "<br>" + "<br>" + "楽しいイベントもあるこの季節";
