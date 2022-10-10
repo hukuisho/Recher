@@ -32,7 +32,8 @@ var aprilAnimation = function aprilAnimation() {
         break;
     }
 
-    Object(aprilAnimationText).setAttribute("style", "text-decoration: underline 2px;"); // aprilAnimationSakura!.classList.add("show");
+    Object(aprilAnimationText).setAttribute("style", "text-decoration: underline 2px;");
+    aprilAnimationSakura.classList.add("show");
   }, time += 2000);
 };
 
