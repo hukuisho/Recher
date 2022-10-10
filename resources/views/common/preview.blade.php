@@ -25,15 +25,9 @@
 <!-- fukui -->
 <div id="aprilAnimation" class="april-animation">
     <ul id="aprilAnimationSakura" class="april-animation__sakura">
+    @for ($i = 0; $i < 8; $i++)
         <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+    @endfor
     </ul>
     <img src="/images/april/NewLife.jpg" id="NewLife" class="april-animation_NewLife"></img>
     <img src="/images/april/Support.png" id="Support" class="april-animation_Support"></img>
