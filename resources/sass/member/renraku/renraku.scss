@@ -37,4 +37,38 @@
             }
         }
     }
+    &__admin-form {
+        width: 70%;
+        margin: 3% auto;
+        &__menu {
+            color: rgba(255, 255, 255, 0.881);
+        }
+        &__text {
+            margin: 5% auto;
+            padding: 3% 0;
+            outline: none;
+            &__area {
+                height: 30%;
+                outline: none;
+            }
+            &__input-btn {
+                margin-top: 10%;
+                padding: 3% 0;
+            }
+        }
+    }
+    &__admin-confirm {
+        width: 70%;
+        margin: 3% auto;
+        display: grid;
+        &__menu {
+            color: #ffff;
+            margin: 5%;
+        }
+        & button {
+            width: 80%;
+            margin: 5% auto;
+            padding: 5% 0;
+        }
+    }
 }

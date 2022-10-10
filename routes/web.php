@@ -21,23 +21,25 @@ Route::get('/notPage', [CommonController::class, 'notPage']);
 Route::get('/',[GuestController::class, 'top']);
 //会員
 Route::group(['middleware' => ['auth']], function () {
-    Route::get('/member',                 [MemberController::class, 'top']);
+    Route::get('/member',                         [MemberController::class, 'top']);
     //ユーザー関連
-    Route::get('/member/user',            [MemberController::class, 'my_page']);
-    Route::get('/member/user/show/{id}',  [MemberController::class, 'profile_show']);
-    Route::get('/member/user/edit/{id}',  [MemberController::class, 'profile_edit']);
-    Route::post('/member/user/edit/{id}', [MemberController::class, 'profile_edit']);
-    Route::get('/member/user/friend',     [MemberController::class, 'friend_top']);
+    Route::get('/member/user',                    [MemberController::class, 'my_page']);
+    Route::get('/member/user/show/{id}',          [MemberController::class, 'profile_show']);
+    Route::get('/member/user/edit/{id}',          [MemberController::class, 'profile_edit']);
+    Route::post('/member/user/edit/{id}',         [MemberController::class, 'profile_edit']);
+    Route::get('/member/user/friend',             [MemberController::class, 'friend_top']);
     //投稿
-    Route::get('/member/timeline',        [MemberController::class, 'timeline_index']);
+    Route::get('/member/timeline',                [MemberController::class, 'timeline_index']);
     //予定
-    Route::get('/member/schedule',        [MemberController::class, 'schedule_index']);
+    Route::get('/member/schedule',                [MemberController::class, 'schedule_index']);
     //検索
-    Route::get('/member/search',          [MemberController::class, 'search']);
+    Route::get('/member/search',                  [MemberController::class, 'search']);
     //通知
-    Route::get('/member/bell',            [MemberController::class, 'bell_index']);
+    Route::get('/member/bell',                    [MemberController::class, 'bell_index']);
     //連絡
-    Route::get('/member/renraku',         [MemberController::class, 'renraku_select']);
-    Route::get('/member/renraku/admin',   [MemberController::class, 'renraku_select_admin']);
-    Route::get('/member/renraku/friend',  [MemberController::class, 'renraku_select_friend']);
+    Route::get('/member/renraku',                 [MemberController::class, 'renraku_select']);
+    Route::get('/member/renraku/admin',           [MemberController::class, 'renraku_select_admin_index']);
+    Route::post('/member/renraku/admin/confirm',  [MemberController::class, 'renraku_select_admin_confirm']);
+    Route::post('/member/renraku/admin/send',     [MemberController::class, 'renraku_select_admin_send']);
+    Route::get('/member/renraku/friend',          [MemberController::class, 'renraku_select_friend']);
 });
