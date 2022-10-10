@@ -34,7 +34,7 @@ const marchAnimation = () => {
     setTimeout(() => {
         marchBg!.classList.remove("show");
         Object(marchAnimationText).innerHTML =
-            "<br>" + "<br>" + "<br>" + "様々な" + "<br>" + "別れや" + "旅立ち";
+            "<br>" + "<br>" + "<br>" + "様々な" + "<br>" + "旅立ちや";
     }, (time += 1000));
     setTimeout(() => {
         Object(marchAnimationText).innerHTML =
