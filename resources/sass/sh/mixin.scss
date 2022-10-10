@@ -1,81 +1,56 @@
 //fukui専用
-@mixin sakuraEffect {
+$sakuraColor: #ffdbed;
+@mixin aprilSakuraPosition($left, $width, $height) {
+    left: $left;
+    width: $width;
+    height: $height;
+}
+@mixin aprilSakuraMoving($time1, $swayType, $time2, $time3) {
+    animation: fall $time1 Linear infinite,
+        $swayType $time2 ease-in-out infinite alternate;
+    animation-delay: $time3;
+}
+@mixin aprilSakuraEffect {
     position: absolute;
     list-style: none;
     top: -20%;
-    background: #ffdbed;
+    background: $sakuraColor;
     border-radius: 0% 70%;
     animation: fall 4s liner infinite, sway 2s ease-in-out infinite alternate;
     &:nth-child(1) {
-        left: 0%;
-        width: 24px;
-        height: 15px;
-        animation: fall 10s Linear infinite,
-            sway1 3s ease-in-out infinite alternate;
-        animation-delay: 2s;
+        @include aprilSakuraPosition(0%, 24px, 15px);
+        @include aprilSakuraMoving(10s, sway1, 3s, 2s);
     }
     &:nth-child(2) {
-        left: 5%;
-        width: 13px;
-        height: 9px;
-        animation: fall 15s linear infinite,
-            sway1 2s ease-in-out infinite alternate;
-        animation-delay: 8s;
+        @include aprilSakuraPosition(5%, 13px, 9px);
+        @include aprilSakuraMoving(15s, sway1, 2s, 8s);
     }
     &:nth-child(3) {
-        left: 15%;
-        width: 16px;
-        height: 10px;
-        animation: fall 9s linear infinite,
-            sway1 3.5s ease-in-out infinite alternate;
-        animation-delay: 13s;
+        @include aprilSakuraPosition(15%, 16px, 10px);
+        @include aprilSakuraMoving(9s, sway1, 3.5s, 13s);
     }
     &:nth-child(4) {
-        left: 30%;
-        width: 16px;
-        height: 10px;
-        animation: fall 8s linear infinite,
-            sway2 4s ease-in-out infinite alternate;
-        animation-delay: 7s;
+        @include aprilSakuraPosition(30%, 16px, 10px);
+        @include aprilSakuraMoving(8s, sway2, 4s, 7s);
     }
     &:nth-child(5) {
-        left: 40%;
-        width: 16px;
-        height: 10px;
-        animation: fall 10s linear infinite,
-            sway1 4s ease-in-out infinite alternate;
-        animation-delay: 0s;
+        @include aprilSakuraPosition(40%, 16px, 10px);
+        @include aprilSakuraMoving(10s, sway1, 4s, 0s);
     }
     &:nth-child(6) {
-        left: 55%;
-        width: 24px;
-        height: 15px;
-        animation: fall 11s linear infinite,
-            sway2 3s ease-in-out infinite alternate;
-        animation-delay: 3s;
+        @include aprilSakuraPosition(55%, 24px, 15px);
+        @include aprilSakuraMoving(11s, sway2, 3s, 3s);
     }
     &:nth-child(7) {
-        left: 65%;
-        width: 16px;
-        height: 10px;
-        animation: fall 7s linear infinite,
-            sway2 3.5s ease-in-out infinite alternate;
-        animation-delay: 7s;
+        @include aprilSakuraPosition(65%, 16px, 10px);
+        @include aprilSakuraMoving(7s, sway2, 3.5s, 7s);
     }
     &:nth-child(8) {
-        left: 50%;
-        width: 13px;
-        height: 9px;
-        animation: fall 7s linear infinite,
-            sway1 3s ease-in-out infinite alternate;
-        animation-delay: 3s;
+        @include aprilSakuraPosition(50%, 13px, 9px);
+        @include aprilSakuraMoving(7s, sway1, 3s, 3s);
     }
     &:nth-child(9) {
-        left: 80%;
-        width: 16px;
-        height: 10px;
-        animation: fall 10s linear infinite,
-            sway2 4s ease-in-out infinite alternate;
-        animation-delay: 4s;
+        @include aprilSakuraPosition(80%, 16px, 10px);
+        @include aprilSakuraMoving(10s, sway2, 4s, 4s);
     }
 }

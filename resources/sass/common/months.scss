@@ -200,7 +200,7 @@ $monthsRepertoire: january, february, march, april, may, june, july, august,
                     display: none;
                 }
                 & li {
-                    @include sakuraEffect;
+                    @include aprilSakuraEffect;
                 }
             }
         }
