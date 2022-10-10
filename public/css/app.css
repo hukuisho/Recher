@@ -557,8 +557,8 @@
   left: 5%;
   width: 13px;
   height: 9px;
-  -webkit-animation: fall 15s linear infinite, sway1 2s ease-in-out infinite alternate;
-          animation: fall 15s linear infinite, sway1 2s ease-in-out infinite alternate;
+  -webkit-animation: fall 15s Linear infinite, sway1 2s ease-in-out infinite alternate;
+          animation: fall 15s Linear infinite, sway1 2s ease-in-out infinite alternate;
   -webkit-animation-delay: 8s;
           animation-delay: 8s;
 }
@@ -566,8 +566,8 @@
   left: 15%;
   width: 16px;
   height: 10px;
-  -webkit-animation: fall 9s linear infinite, sway1 3.5s ease-in-out infinite alternate;
-          animation: fall 9s linear infinite, sway1 3.5s ease-in-out infinite alternate;
+  -webkit-animation: fall 9s Linear infinite, sway1 3.5s ease-in-out infinite alternate;
+          animation: fall 9s Linear infinite, sway1 3.5s ease-in-out infinite alternate;
   -webkit-animation-delay: 13s;
           animation-delay: 13s;
 }
@@ -575,8 +575,8 @@
   left: 30%;
   width: 16px;
   height: 10px;
-  -webkit-animation: fall 8s linear infinite, sway2 4s ease-in-out infinite alternate;
-          animation: fall 8s linear infinite, sway2 4s ease-in-out infinite alternate;
+  -webkit-animation: fall 8s Linear infinite, sway2 4s ease-in-out infinite alternate;
+          animation: fall 8s Linear infinite, sway2 4s ease-in-out infinite alternate;
   -webkit-animation-delay: 7s;
           animation-delay: 7s;
 }
@@ -584,8 +584,8 @@
   left: 40%;
   width: 16px;
   height: 10px;
-  -webkit-animation: fall 10s linear infinite, sway1 4s ease-in-out infinite alternate;
-          animation: fall 10s linear infinite, sway1 4s ease-in-out infinite alternate;
+  -webkit-animation: fall 10s Linear infinite, sway1 4s ease-in-out infinite alternate;
+          animation: fall 10s Linear infinite, sway1 4s ease-in-out infinite alternate;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 }
@@ -593,8 +593,8 @@
   left: 55%;
   width: 24px;
   height: 15px;
-  -webkit-animation: fall 11s linear infinite, sway2 3s ease-in-out infinite alternate;
-          animation: fall 11s linear infinite, sway2 3s ease-in-out infinite alternate;
+  -webkit-animation: fall 11s Linear infinite, sway2 3s ease-in-out infinite alternate;
+          animation: fall 11s Linear infinite, sway2 3s ease-in-out infinite alternate;
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
@@ -602,8 +602,8 @@
   left: 65%;
   width: 16px;
   height: 10px;
-  -webkit-animation: fall 7s linear infinite, sway2 3.5s ease-in-out infinite alternate;
-          animation: fall 7s linear infinite, sway2 3.5s ease-in-out infinite alternate;
+  -webkit-animation: fall 7s Linear infinite, sway2 3.5s ease-in-out infinite alternate;
+          animation: fall 7s Linear infinite, sway2 3.5s ease-in-out infinite alternate;
   -webkit-animation-delay: 7s;
           animation-delay: 7s;
 }
@@ -611,8 +611,8 @@
   left: 50%;
   width: 13px;
   height: 9px;
-  -webkit-animation: fall 7s linear infinite, sway1 3s ease-in-out infinite alternate;
-          animation: fall 7s linear infinite, sway1 3s ease-in-out infinite alternate;
+  -webkit-animation: fall 7s Linear infinite, sway1 3s ease-in-out infinite alternate;
+          animation: fall 7s Linear infinite, sway1 3s ease-in-out infinite alternate;
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
@@ -620,8 +620,8 @@
   left: 80%;
   width: 16px;
   height: 10px;
-  -webkit-animation: fall 10s linear infinite, sway2 4s ease-in-out infinite alternate;
-          animation: fall 10s linear infinite, sway2 4s ease-in-out infinite alternate;
+  -webkit-animation: fall 10s Linear infinite, sway2 4s ease-in-out infinite alternate;
+          animation: fall 10s Linear infinite, sway2 4s ease-in-out infinite alternate;
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
 }

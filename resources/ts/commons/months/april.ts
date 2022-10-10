@@ -57,7 +57,7 @@ const aprilAnimation = () => {
             "style",
             "text-decoration: underline 2px;"
         );
-        aprilAnimationSakura!.classList.add("show");
+        // aprilAnimationSakura!.classList.add("show");
     }, (time += 2000));
 };
 
