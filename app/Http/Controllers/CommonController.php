@@ -12,9 +12,7 @@ class CommonController extends Controller
         return view('common/about/about')->with('viewUseArray',$viewUseArray);
     }
     public function preview() {
-        $viewUseArray = array(
-        );
-        return view('common/preview')->with('viewUseArray',$viewUseArray);
+        return view('common/preview');
     }
     
     public function profile_delete_pre() {
