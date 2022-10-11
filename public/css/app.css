@@ -1414,7 +1414,7 @@ button {
 }
 .renraku__admin-confirm__menu {
   color: white;
-  margin: 5%;
+  margin: 5% 0;
 }
 .renraku__admin-confirm button {
   width: 80%;

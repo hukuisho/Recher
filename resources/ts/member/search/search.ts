@@ -11,11 +11,11 @@ addEventListener("DOMContentLoaded", () => {
         } else {
             const searchFormAction =
                 document.querySelector("#searchFormAction");
+            alert("Google検索ページへ移動します。");
             Object(searchFormAction).setAttribute(
                 "action",
                 "http://www.google.co.jp/search"
             );
-            alert("Google検索ページへ移動します。");
         }
     });
 });
