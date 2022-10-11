@@ -996,6 +996,10 @@ button {
           animation: backgroundColorChange 2s linear infinite;
 }
 
+.error-message {
+  color: red;
+}
+
 .richer__header {
   width: 100%;
   height: 80px;
@@ -1382,6 +1386,40 @@ button {
   color: goldenrod;
   -webkit-text-decoration: solid 2px;
           text-decoration: solid 2px;
+}
+.renraku__admin-form {
+  width: 70%;
+  margin: 3% auto;
+}
+.renraku__admin-form__menu {
+  color: rgba(255, 255, 255, 0.881);
+}
+.renraku__admin-form__text {
+  margin: 5% auto;
+  padding: 3% 0;
+  outline: none;
+}
+.renraku__admin-form__text__area {
+  height: 30%;
+  outline: none;
+}
+.renraku__admin-form__text__input-btn {
+  margin-top: 10%;
+  padding: 3% 0;
+}
+.renraku__admin-confirm {
+  width: 70%;
+  margin: 3% auto;
+  display: grid;
+}
+.renraku__admin-confirm__menu {
+  color: white;
+  margin: 5% 0;
+}
+.renraku__admin-confirm button {
+  width: 80%;
+  margin: 5% auto;
+  padding: 5% 0;
 }
 
 .loading {

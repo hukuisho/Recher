@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models;
+use App\Mail\ContactsSendmail;
 
 class MemberController extends Controller
 {
@@ -78,10 +79,53 @@ class MemberController extends Controller
         );
         return view('member/renraku/select')->with('viewUseArray',$viewUseArray);
     }
-    public function renraku_select_admin() {
-        $viewUseArray = array(
-        );
-        return view('member/renraku/admin/index')->with('viewUseArray',$viewUseArray);
+    public function renraku_select_admin_index() {
+        return view('member.renraku.admin.index');
+    }
+    public function renraku_select_admin_confirm(Request $request) {
+        // バリデーションルールを定義
+        // 引っかかるとエラーを起こしてくれる
+        $request->validate([
+        'email' => 'required|email',
+        'title' => 'required',
+        'body' => 'required',
+        ]);
+    
+        // フォームからの入力値を全て取得
+        $inputs = $request->all();
+        // 確認ページに表示
+        // 入力値を引数に渡す
+        return view('member/renraku/admin/confirm', [
+        'inputs' => $inputs,
+        ]);
+    }
+    public function renraku_select_admin_send(Request $request)
+    {
+        // バリデーション
+        $request->validate([
+        'email' => 'required|email',
+        'title' => 'required',
+        'body' => 'required'
+        ]);
+
+        // actionの値を取得
+        $action = $request->input('action');
+
+        // action以外のinputの値を取得
+        $inputs = $request->except('action');
+
+            // 送信ボタンの場合、送信処理
+
+            // ユーザにメールを送信
+            \Mail::to($inputs['email'])->send(new ContactsSendmail($inputs));
+            // 自分にメールを送信
+            \Mail::to('hms0175km@gmail.com')->send(new ContactsSendmail($inputs));
+
+            // 二重送信対策のためトークンを再発行
+            $request->session()->regenerateToken();
+
+            // 送信完了ページのviewを表示
+            return view('member/renraku/admin/send');
     }
     public function renraku_select_friend() {
         $viewUseArray = array(

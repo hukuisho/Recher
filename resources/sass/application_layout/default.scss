@@ -28,3 +28,6 @@ button {
     transition: all 1000ms ease-in-out;
     animation: backgroundColorChange 2s linear infinite;
 }
+.error-message {
+    color: red;
+}
