@@ -54,6 +54,9 @@ $month = date('n');
     @case ("/member/renraku")
         <script src="{{ asset('/js/member/renraku/renraku.js') }}"></script>
     @break
+    @case ("/member/schedule")
+        <script src="{{ asset('/js/member/schedule/Schedule.js') }}"></script>
+    @break
     @default
     @if(strpos($_SERVER['REQUEST_URI'],'user') == true)
         <script src="{{ asset('/js/member/user/user.js') }}"></script>

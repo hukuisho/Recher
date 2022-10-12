@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models;
 use App\Mail\ContactsSendmail;
 
+
 class MemberController extends Controller
 {
     public function top() {
