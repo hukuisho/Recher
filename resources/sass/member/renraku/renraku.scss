@@ -31,6 +31,8 @@
         overflow-wrap: break-word;
         &__text {
             padding: 2% 0%;
+            color: blanchedalmond;
+            @include textShadowColor(black);
             & span {
                 color: goldenrod;
                 text-decoration: solid 2px;
@@ -52,8 +54,11 @@
                 outline: none;
             }
             &__input-btn {
+                width: 50%;
                 margin-top: 10%;
                 padding: 3% 0;
+                animation: none;
+                background-color: goldenrod;
             }
         }
     }
@@ -72,6 +77,8 @@
             width: 80%;
             margin: 5% auto;
             padding: 5% 0;
+            animation: none;
+            background-color: #ffff;
         }
     }
 }

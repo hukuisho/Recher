@@ -1381,6 +1381,8 @@ button {
 }
 .renraku__explanation__text {
   padding: 2% 0%;
+  color: blanchedalmond;
+  text-shadow: black 1px 0px 1px, black -1px 0px 1px, black 0px -1px 1px, black -1px 0px 1px, black 1px 1px 1px, black -1px 1px 1px, black 1px -1px 1px, black -1px -1px 1px, black 1px 1px 1px, black -1px 1px 1px;
 }
 .renraku__explanation__text span {
   color: goldenrod;
@@ -1404,8 +1406,12 @@ button {
   outline: none;
 }
 .renraku__admin-form__text__input-btn {
+  width: 50%;
   margin-top: 10%;
   padding: 3% 0;
+  -webkit-animation: none;
+          animation: none;
+  background-color: goldenrod;
 }
 .renraku__admin-confirm {
   width: 70%;
@@ -1423,6 +1429,9 @@ button {
   width: 80%;
   margin: 5% auto;
   padding: 5% 0;
+  -webkit-animation: none;
+          animation: none;
+  background-color: white;
 }
 
 .loading {
