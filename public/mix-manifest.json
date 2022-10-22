@@ -1,7 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
-    "/js/react/App.js": "/js/react/App.js",
-    "/js/member/schedule/Schedule.js": "/js/member/schedule/Schedule.js",
+    "/js/member/schedule/schedule.js": "/js/member/schedule/schedule.js",
     "/js/commons/header.js": "/js/commons/header.js",
     "/js/commons/footer.js": "/js/commons/footer.js",
     "/js/commons/about.js": "/js/commons/about.js",
