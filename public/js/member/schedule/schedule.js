@@ -1,13 +1,9 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 var __webpack_exports__ = {};
-/*!***********************************************************!*\
-  !*** ./resources/ts/react/components/member/Schedule.tsx ***!
-  \***********************************************************/
+/*!**************************************************!*\
+  !*** ./resources/ts/member/schedule/schedule.ts ***!
+  \**************************************************/
 
-
-addEventListener("DOMContentLoaded", function () {
-  alert("dfghj");
-});
 /******/ })()
 ;

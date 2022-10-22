@@ -1,8 +1,7 @@
 const mix = require("laravel-mix");
 mix.ts("resources/ts/app.ts", "public/js");
-mix.ts("resources/ts/react/App.tsx", "public/js/react");
 mix.ts(
-    "resources/ts/react/components/member/Schedule.tsx",
+    "resources/ts/member/schedule/schedule.ts",
     "public/js/member/schedule/"
 );
 mix.ts("resources/ts/commons/header.ts", "public/js/commons/");
