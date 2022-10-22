@@ -22,10 +22,7 @@ class MemberController extends Controller
         return view('member/user/my_page')->with('viewUseArray',$viewUseArray);
     }
     public function profile_show() {
-
-        $viewUseArray = array(
-        );
-        return view('member.user.show')->with('viewUseArray',$viewUseArray);
+        return view('member.user.show');
     }
     public function profile_edit(Request $request) {
         $user_form = $request->all();
