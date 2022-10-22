@@ -64,6 +64,9 @@
         &__menu {
             color: #ffff;
             margin: 5% 0;
+            &__value {
+                color: goldenrod;
+            }
         }
         & button {
             width: 80%;
